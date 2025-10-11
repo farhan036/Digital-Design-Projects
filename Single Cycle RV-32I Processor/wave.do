@@ -1,0 +1,45 @@
+onerror {resume}
+quietly WaveActivateNextPane {} 0
+add wave -noupdate /RISC_tb/CLK
+add wave -noupdate /RISC_tb/RST
+add wave -noupdate -color Orange -radix unsigned -childformat {{{/RISC_tb/dut/DUT6/Dmemory[0]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[1]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[2]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[3]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[4]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[5]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[6]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[7]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[8]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[9]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[10]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[11]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[12]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[13]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[14]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[15]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[16]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[17]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[18]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[19]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[20]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[21]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[22]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[23]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[24]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[25]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[26]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[27]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[28]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[29]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[30]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[31]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[32]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[33]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[34]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[35]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[36]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[37]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[38]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[39]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[40]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[41]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[42]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[43]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[44]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[45]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[46]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[47]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[48]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[49]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[50]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[51]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[52]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[53]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[54]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[55]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[56]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[57]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[58]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[59]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[60]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[61]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[62]} -radix unsigned} {{/RISC_tb/dut/DUT6/Dmemory[63]} -radix unsigned}} -subitemconfig {{/RISC_tb/dut/DUT6/Dmemory[0]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[1]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[2]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[3]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[4]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[5]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[6]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[7]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[8]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[9]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[10]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[11]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[12]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[13]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[14]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[15]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[16]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[17]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[18]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[19]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[20]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[21]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[22]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[23]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[24]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[25]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[26]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[27]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[28]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[29]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[30]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[31]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[32]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[33]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[34]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[35]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[36]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[37]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[38]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[39]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[40]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[41]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[42]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[43]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[44]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[45]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[46]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[47]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[48]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[49]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[50]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[51]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[52]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[53]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[54]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[55]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[56]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[57]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[58]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[59]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[60]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[61]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[62]} {-color Orange -radix unsigned} {/RISC_tb/dut/DUT6/Dmemory[63]} {-color Orange -radix unsigned}} /RISC_tb/dut/DUT6/Dmemory
+add wave -noupdate /RISC_tb/dut/DUT2/ROM
+add wave -noupdate /RISC_tb/dut/DUT/Zero
+add wave -noupdate /RISC_tb/dut/DUT/sign
+add wave -noupdate /RISC_tb/dut/DUT/OP
+add wave -noupdate /RISC_tb/dut/DUT/funct3
+add wave -noupdate /RISC_tb/dut/DUT/funct7
+add wave -noupdate /RISC_tb/dut/DUT/ALUControl
+add wave -noupdate /RISC_tb/dut/DUT/PCSrc
+add wave -noupdate /RISC_tb/dut/DUT/ResultSrc
+add wave -noupdate /RISC_tb/dut/DUT/MemWrite
+add wave -noupdate /RISC_tb/dut/DUT/ALUSrc
+add wave -noupdate /RISC_tb/dut/DUT/ImmSrc
+add wave -noupdate /RISC_tb/dut/DUT/RegWrite
+add wave -noupdate /RISC_tb/dut/DUT/ALUOP
+add wave -noupdate /RISC_tb/dut/DUT/Branch
+add wave -noupdate /RISC_tb/dut/DUT/bnq
+add wave -noupdate /RISC_tb/dut/DUT/blt
+add wave -noupdate /RISC_tb/dut/DUT/beq
+add wave -noupdate /RISC_tb/dut/DUT3/CLK
+add wave -noupdate /RISC_tb/dut/DUT3/RST
+add wave -noupdate /RISC_tb/dut/DUT3/PCNext
+add wave -noupdate /RISC_tb/dut/DUT3/PC
+TreeUpdate [SetDefaultTree]
+WaveRestoreCursors {{Cursor 1} {0 ps} 0}
+quietly wave cursor active 0
+configure wave -namecolwidth 150
+configure wave -valuecolwidth 100
+configure wave -justifyvalue left
+configure wave -signalnamewidth 1
+configure wave -snapdistance 10
+configure wave -datasetprefix 0
+configure wave -rowmargin 4
+configure wave -childrowmargin 2
+configure wave -gridoffset 0
+configure wave -gridperiod 1
+configure wave -griddelta 40
+configure wave -timeline 0
+configure wave -timelineunits ps
+update
+WaveRestoreZoom {123 ps} {1702 ps}
