@@ -1,0 +1,102 @@
+In mode: Internal_scan...
+  Design has scan chains in this mode
+  Design is scan routed
+  Post-DFT DRC enabled
+
+Information: Starting test design rule checking. (TEST-222)
+  Loading test protocol
+  ...basic checks...
+  ...basic sequential cell checks...
+  ...checking vector rules...
+  ...checking clock rules...
+  ...checking scan chain rules...
+  ...checking scan compression rules...
+  ...checking X-state rules...
+  ...checking tristate rules...
+  ...extracting scan details...
+
+-----------------------------------------------------------------
+Begin Other violations...
+
+Warning: Cell CLK_GATE/U0_TLATNCAX12M has constant 1 value. (TEST-505)
+
+Other violations completed...
+-----------------------------------------------------------------
+
+-----------------------------------------------------------------
+  DRC Report
+
+  Total violations: 1
+
+-----------------------------------------------------------------
+
+1 OTHER VIOLATION
+     1 Cell is constant 1 violation (TEST-505)
+
+
+Warning: Violations occurred during test design rule checking. (TEST-124)
+
+-----------------------------------------------------------------
+  Sequential Cell Report
+
+  1 out of 362 sequential cells have violations
+
+-----------------------------------------------------------------
+
+SEQUENTIAL CELLS WITH VIOLATIONS
+      *   1 cell has constant 1 value
+SEQUENTIAL CELLS WITHOUT VIOLATIONS
+      * 361 cells are valid scan cells
+
+Information: Test design rule checking completed. (TEST-123)
+  Running test coverage estimation...
+ 16274 faults were added to fault list.
+ ATPG performed for stuck fault model using internal pattern source.
+ ----------------------------------------------------------
+ #patterns     #faults     #ATPG faults  test      process
+ stored     detect/active  red/au/abort  coverage  CPU time
+ ---------  -------------  ------------  --------  --------
+ Begin deterministic ATPG: #uncollapsed_faults=12987, abort_limit=10...
+ 0            6962   6025         0/0/0    62.25%      0.00
+ 0            1993   4030         2/0/0    74.60%      0.01
+ 0            1132   2892         7/0/1    81.64%      0.01
+ 0             490   2395        10/0/1    84.72%      0.01
+ 0             424   1961        17/0/2    87.40%      0.01
+ 0             242   1706        24/0/2    88.97%      0.01
+ 0             219   1451        53/0/3    90.53%      0.01
+ 0             158   1280        62/0/3    91.59%      0.04
+ 0             162   1109        68/0/3    92.65%      0.04
+ 0             160    938        75/0/3    93.71%      0.04
+ 0             126    795        86/0/4    94.60%      0.04
+ 0              85    691       100/0/5    95.24%      0.04
+ 0              88    584       113/0/7    95.91%      0.04
+ 0              74    482       130/0/7    96.54%      0.04
+ 0              78    378       147/0/8    97.18%      0.04
+ 0              63    282       169/0/8    97.78%      0.04
+ 0              51    123       234/0/9    98.77%      0.04
+ 0              57     57       239/0/9    99.19%      0.07
+ 0              27     12      253/0/11    99.48%      0.07
+ 
+            Pattern Summary Report
+ -----------------------------------------------
+ #internal patterns                           0
+ -----------------------------------------------
+ 
+
+     Uncollapsed Stuck Fault Summary Report
+ -----------------------------------------------
+ fault class                     code   #faults
+ ------------------------------  ----  ---------
+ Detected                         DT      15680
+ Possibly detected                PT          1
+ Undetectable                     UD        511
+ ATPG untestable                  AU         71
+ Not detected                     ND         11
+ -----------------------------------------------
+ total faults                             16274
+ test coverage                            99.48%
+ -----------------------------------------------
+  Information: The test coverage above may be inferior
+               than the real test coverage with customized
+               protocol and test simulation library.
+1
