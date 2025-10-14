@@ -1,0 +1,1789 @@
+
+
+
+
+
+Tracing Clock scan_clk
+Warning: Pin U4_mux2X1/U1/Y is a reconvergence pins in Clock scan_clk
+Warning: Pin clock_divider_TX/U29/Y is a reconvergence pins in Clock scan_clk
+Warning: Pin clock_divider_TX/U29/Y is a reconvergence pins in Clock scan_clk
+Warning: Pin U3_mux2X1/U1/Y is a reconvergence pins in Clock scan_clk
+Warning: Pin clock_divider_RX/U29/Y is a reconvergence pins in Clock scan_clk
+Warning: Pin clock_divider_RX/U29/Y is a reconvergence pins in Clock scan_clk
+
+****** Clock Tree (scan_clk) Structure
+Nr. Subtrees                   : 14
+Nr. Sinks                      : 358
+Nr.          Rising  Sync Pins : 328
+Nr. Inverter Rising  Sync Pins : 0
+Nr. Inv/NonInv Rising Sync Pins : 30 (due to reconvergence)
+Nr.          Falling Sync Pins : 0
+Nr. Inverter Falling Sync Pins : 0
+
+** Leaf Pins
+CELL (PORT)                            Nr.
+-----------------------------------------------
+SDFFRX1M (CK)                           8
+SDFFRQX2M (CK)                          339
+SDFFSQX1M (CK)                          1
+SDFFRQX4M (CK)                          6
+SDFFSQX2M (CK)                          3
+SDFFRQX1M (CK)                          1
+-----------------------------------------------
+
+
+
+
+** Gate Component Input Pins
+CELL (PORT)                            Nr.
+-----------------------------------------------
+SDFFRQX1M (CK)                          1
+MX2X6M (B)                              1
+SDFFRQX2M (CK)                          2
+CLKMX2X2M (B)                           2
+NOR2BX1M (AN)                           2
+MX2X2M (A)                              3
+TLATNCAX12M (CK)                        1
+CLKMX2X2M (S0)                          2
+MX2X2M (B)                              3
+CLKMX2X2M (A)                           2
+-----------------------------------------------
+
+
+
+** Subtree Detail
+*DEPTH 0 Input_Pin: (EMPTY) Output_Pin: (scan_clk) Cell: (EMPTY) Net: (scan_clk) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Total Sync Pins        : 0
+          Nr. of     Rising  Sync Pins  : 0
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 4
+*DEPTH 1 Input_Pin: (U0_mux2X1/U1/B) Output_Pin: (U0_mux2X1/U1/Y) Cell: (MX2X6M) Net: (CLK_M) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Total Sync Pins        : 257
+          Nr. of     Rising  Sync Pins  : 257
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 1
+*DEPTH 2 Input_Pin: (CLK_GATE/U0_TLATNCAX12M/CK) Output_Pin: (CLK_GATE/U0_TLATNCAX12M/ECK) Cell: (TLATNCAX12M) Net: (ALU_CLK) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Total Sync Pins        : 17
+          Nr. of     Rising  Sync Pins  : 17
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 0
+*DEPTH 1 Input_Pin: (U1_mux2X1/U1/B) Output_Pin: (U1_mux2X1/U1/Y) Cell: (MX2X2M) Net: (CLKR) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Total Sync Pins        : 19
+          Nr. of     Rising  Sync Pins  : 19
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 5
+*DEPTH 2 Input_Pin: (clock_divider_RX/div_clk_reg/CK) Output_Pin: (clock_divider_RX/div_clk_reg/Q) Cell: (SDFFRQX2M) Net: (clock_divider_RX/div_clk) NO-INV
+          Nr. of Exclude Pins           : 2
+          Nr. of Total Sync Pins        : 0
+          Nr. of     Rising  Sync Pins  : 0
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 1
+*DEPTH 3 Input_Pin: (clock_divider_RX/U29/B) Output_Pin: (clock_divider_RX/U29/Y) Cell: (CLKMX2X2M) Net: (RX_CLK) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Total Sync Pins        : 0
+          Nr. of     Rising  Sync Pins  : 0
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 1
+*DEPTH 4 Input_Pin: (U3_mux2X1/U1/A) Output_Pin: (U3_mux2X1/U1/Y) Cell: (MX2X2M) Net: (RX_CLK1) INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Total Sync Pins        : 30
+          Nr. of     Rising  Sync Pins  : 30
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 0
+*DEPTH 2 Input_Pin: (clock_divider_RX/U29/A) Output_Pin: (clock_divider_RX/U29/Y) Cell: (CLKMX2X2M) Net: (RX_CLK) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Total Sync Pins        : 0
+          Nr. of     Rising  Sync Pins  : 0
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 1
+*DEPTH 3 Input_Pin: (U3_mux2X1/U1/A) Output_Pin: (U3_mux2X1/U1/Y) Cell: (MX2X2M) Net: (RX_CLK1) INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Total Sync Pins        : 30
+          Nr. of     Rising  Sync Pins  : 30
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 0
+*DEPTH 2 Input_Pin: (RSTSYNC2/sync_reg_reg[1]/CK) Output_Pin: (RSTSYNC2/sync_reg_reg[1]/Q) Cell: (SDFFRQX1M) Net: (SYNC_RST2) NO-INV
+          Nr. of Exclude Pins           : 1
+          Nr. of Total Sync Pins        : 0
+          Nr. of     Rising  Sync Pins  : 0
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 1
+*DEPTH 3 Input_Pin: (U7_mux2X1/U1/A) Output_Pin: (U7_mux2X1/U1/Y) Cell: (MX2X2M) Net: (SYNC_RST22) NO-INV
+          Nr. of Exclude Pins           : 85
+          Nr. of Total Sync Pins        : 0
+          Nr. of     Rising  Sync Pins  : 0
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 2
+*DEPTH 4 Input_Pin: (clock_divider_RX/U30/AN) Output_Pin: (clock_divider_RX/U30/Y) Cell: (NOR2BX1M) Net: (clock_divider_RX/n7) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Total Sync Pins        : 0
+          Nr. of     Rising  Sync Pins  : 0
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 1
+*DEPTH 5 Input_Pin: (clock_divider_RX/U29/S0) Output_Pin: (clock_divider_RX/U29/Y) Cell: (CLKMX2X2M) Net: (RX_CLK) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Total Sync Pins        : 0
+          Nr. of     Rising  Sync Pins  : 0
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 1
+*DEPTH 6 Input_Pin: (U3_mux2X1/U1/A) Output_Pin: (U3_mux2X1/U1/Y) Cell: (MX2X2M) Net: (RX_CLK1) INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Total Sync Pins        : 30
+          Nr. of     Rising  Sync Pins  : 30
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 0
+*DEPTH 4 Input_Pin: (clock_divider_TX/U30/AN) Output_Pin: (clock_divider_TX/U30/Y) Cell: (NOR2BX1M) Net: (clock_divider_TX/n7) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Total Sync Pins        : 0
+          Nr. of     Rising  Sync Pins  : 0
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 1
+*DEPTH 5 Input_Pin: (clock_divider_TX/U29/S0) Output_Pin: (clock_divider_TX/U29/Y) Cell: (CLKMX2X2M) Net: (TX_CLK) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Total Sync Pins        : 0
+          Nr. of     Rising  Sync Pins  : 0
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 1
+*DEPTH 6 Input_Pin: (U4_mux2X1/U1/A) Output_Pin: (U4_mux2X1/U1/Y) Cell: (MX2X2M) Net: (TX_CLK1) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Total Sync Pins        : 35
+          Nr. of     Rising  Sync Pins  : 35
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 0
+*DEPTH 2 Input_Pin: (clock_divider_TX/div_clk_reg/CK) Output_Pin: (clock_divider_TX/div_clk_reg/Q) Cell: (SDFFRQX2M) Net: (clock_divider_TX/div_clk) NO-INV
+          Nr. of Exclude Pins           : 2
+          Nr. of Total Sync Pins        : 0
+          Nr. of     Rising  Sync Pins  : 0
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 1
+*DEPTH 3 Input_Pin: (clock_divider_TX/U29/B) Output_Pin: (clock_divider_TX/U29/Y) Cell: (CLKMX2X2M) Net: (TX_CLK) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Total Sync Pins        : 0
+          Nr. of     Rising  Sync Pins  : 0
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 1
+*DEPTH 4 Input_Pin: (U4_mux2X1/U1/A) Output_Pin: (U4_mux2X1/U1/Y) Cell: (MX2X2M) Net: (TX_CLK1) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Total Sync Pins        : 35
+          Nr. of     Rising  Sync Pins  : 35
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 0
+*DEPTH 2 Input_Pin: (clock_divider_TX/U29/A) Output_Pin: (clock_divider_TX/U29/Y) Cell: (CLKMX2X2M) Net: (TX_CLK) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Total Sync Pins        : 0
+          Nr. of     Rising  Sync Pins  : 0
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 1
+*DEPTH 3 Input_Pin: (U4_mux2X1/U1/A) Output_Pin: (U4_mux2X1/U1/Y) Cell: (MX2X2M) Net: (TX_CLK1) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Total Sync Pins        : 35
+          Nr. of     Rising  Sync Pins  : 35
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 0
+*DEPTH 1 Input_Pin: (U3_mux2X1/U1/B) Output_Pin: (U3_mux2X1/U1/Y) Cell: (MX2X2M) Net: (RX_CLK1) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Total Sync Pins        : 30
+          Nr. of     Rising  Sync Pins  : 30
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 0
+*DEPTH 1 Input_Pin: (U4_mux2X1/U1/B) Output_Pin: (U4_mux2X1/U1/Y) Cell: (MX2X2M) Net: (TX_CLK1) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Total Sync Pins        : 35
+          Nr. of     Rising  Sync Pins  : 35
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 0
+***********************************************************
+
+****** Pre CTS Detail Structure for clock scan_clk
+*DEPTH 0: scan_clk
+ *DEPTH 1: U0_mux2X1/U1(B->Y)
+  (Sync)Data_sync/enable_flop_reg/CK
+  (Sync)Data_sync/sync_reg_reg[1]/CK
+  (Sync)Data_sync/sync_bus_reg[7]/CK
+  (Sync)Data_sync/sync_bus_reg[5]/CK
+  (Sync)Data_sync/sync_bus_reg[4]/CK
+  (Sync)Data_sync/sync_bus_reg[6]/CK
+  (Sync)Data_sync/sync_bus_reg[3]/CK
+  (Sync)Data_sync/sync_bus_reg[1]/CK
+  (Sync)Data_sync/sync_bus_reg[2]/CK
+  (Sync)Data_sync/sync_bus_reg[0]/CK
+  (Sync)Data_sync/enable_pulse_reg/CK
+  (Sync)Data_sync/sync_reg_reg[0]/CK
+  (Sync)REGISTER/Reg_File_reg[13][7]/CK
+  (Sync)REGISTER/Reg_File_reg[13][6]/CK
+  (Sync)REGISTER/Reg_File_reg[13][5]/CK
+  (Sync)REGISTER/Reg_File_reg[13][4]/CK
+  (Sync)REGISTER/Reg_File_reg[13][3]/CK
+  (Sync)REGISTER/Reg_File_reg[13][2]/CK
+  (Sync)REGISTER/Reg_File_reg[13][1]/CK
+  (Sync)REGISTER/Reg_File_reg[13][0]/CK
+  (Sync)REGISTER/Reg_File_reg[9][7]/CK
+  (Sync)REGISTER/Reg_File_reg[9][6]/CK
+  (Sync)REGISTER/Reg_File_reg[9][5]/CK
+  (Sync)REGISTER/Reg_File_reg[9][4]/CK
+  (Sync)REGISTER/Reg_File_reg[9][3]/CK
+  (Sync)REGISTER/Reg_File_reg[9][2]/CK
+  (Sync)REGISTER/Reg_File_reg[9][1]/CK
+  (Sync)REGISTER/Reg_File_reg[9][0]/CK
+  (Sync)REGISTER/Reg_File_reg[5][7]/CK
+  (Sync)REGISTER/Reg_File_reg[5][6]/CK
+  (Sync)REGISTER/Reg_File_reg[5][5]/CK
+  (Sync)REGISTER/Reg_File_reg[5][4]/CK
+  (Sync)REGISTER/Reg_File_reg[5][3]/CK
+  (Sync)REGISTER/Reg_File_reg[5][2]/CK
+  (Sync)REGISTER/Reg_File_reg[5][1]/CK
+  (Sync)REGISTER/Reg_File_reg[5][0]/CK
+  (Sync)REGISTER/Reg_File_reg[15][7]/CK
+  (Sync)REGISTER/Reg_File_reg[15][6]/CK
+  (Sync)REGISTER/Reg_File_reg[15][5]/CK
+  (Sync)REGISTER/Reg_File_reg[15][4]/CK
+  (Sync)REGISTER/Reg_File_reg[15][3]/CK
+  (Sync)REGISTER/Reg_File_reg[15][2]/CK
+  (Sync)REGISTER/Reg_File_reg[15][1]/CK
+  (Sync)REGISTER/Reg_File_reg[15][0]/CK
+  (Sync)REGISTER/Reg_File_reg[11][7]/CK
+  (Sync)REGISTER/Reg_File_reg[11][6]/CK
+  (Sync)REGISTER/Reg_File_reg[11][5]/CK
+  (Sync)REGISTER/Reg_File_reg[11][4]/CK
+  (Sync)REGISTER/Reg_File_reg[11][3]/CK
+  (Sync)REGISTER/Reg_File_reg[11][2]/CK
+  (Sync)REGISTER/Reg_File_reg[11][1]/CK
+  (Sync)REGISTER/Reg_File_reg[11][0]/CK
+  (Sync)REGISTER/Reg_File_reg[7][7]/CK
+  (Sync)REGISTER/Reg_File_reg[7][6]/CK
+  (Sync)REGISTER/Reg_File_reg[7][5]/CK
+  (Sync)REGISTER/Reg_File_reg[7][4]/CK
+  (Sync)REGISTER/Reg_File_reg[7][3]/CK
+  (Sync)REGISTER/Reg_File_reg[7][2]/CK
+  (Sync)REGISTER/Reg_File_reg[7][1]/CK
+  (Sync)REGISTER/Reg_File_reg[7][0]/CK
+  (Sync)REGISTER/Reg_File_reg[14][7]/CK
+  (Sync)REGISTER/Reg_File_reg[14][6]/CK
+  (Sync)REGISTER/Reg_File_reg[14][5]/CK
+  (Sync)REGISTER/Reg_File_reg[14][4]/CK
+  (Sync)REGISTER/Reg_File_reg[14][3]/CK
+  (Sync)REGISTER/Reg_File_reg[14][2]/CK
+  (Sync)REGISTER/Reg_File_reg[14][1]/CK
+  (Sync)REGISTER/Reg_File_reg[14][0]/CK
+  (Sync)REGISTER/Reg_File_reg[10][7]/CK
+  (Sync)REGISTER/Reg_File_reg[10][6]/CK
+  (Sync)REGISTER/Reg_File_reg[10][5]/CK
+  (Sync)REGISTER/Reg_File_reg[10][4]/CK
+  (Sync)REGISTER/Reg_File_reg[10][3]/CK
+  (Sync)REGISTER/Reg_File_reg[10][2]/CK
+  (Sync)REGISTER/Reg_File_reg[10][1]/CK
+  (Sync)REGISTER/Reg_File_reg[10][0]/CK
+  (Sync)REGISTER/Reg_File_reg[6][7]/CK
+  (Sync)REGISTER/Reg_File_reg[6][6]/CK
+  (Sync)REGISTER/Reg_File_reg[6][5]/CK
+  (Sync)REGISTER/Reg_File_reg[6][4]/CK
+  (Sync)REGISTER/Reg_File_reg[6][3]/CK
+  (Sync)REGISTER/Reg_File_reg[6][2]/CK
+  (Sync)REGISTER/Reg_File_reg[6][1]/CK
+  (Sync)REGISTER/Reg_File_reg[6][0]/CK
+  (Sync)REGISTER/Reg_File_reg[12][7]/CK
+  (Sync)REGISTER/Reg_File_reg[12][6]/CK
+  (Sync)REGISTER/Reg_File_reg[12][5]/CK
+  (Sync)REGISTER/Reg_File_reg[12][4]/CK
+  (Sync)REGISTER/Reg_File_reg[12][3]/CK
+  (Sync)REGISTER/Reg_File_reg[12][2]/CK
+  (Sync)REGISTER/Reg_File_reg[12][1]/CK
+  (Sync)REGISTER/Reg_File_reg[12][0]/CK
+  (Sync)REGISTER/Reg_File_reg[8][7]/CK
+  (Sync)REGISTER/Reg_File_reg[8][6]/CK
+  (Sync)REGISTER/Reg_File_reg[8][5]/CK
+  (Sync)REGISTER/Reg_File_reg[8][4]/CK
+  (Sync)REGISTER/Reg_File_reg[8][3]/CK
+  (Sync)REGISTER/Reg_File_reg[8][2]/CK
+  (Sync)REGISTER/Reg_File_reg[8][1]/CK
+  (Sync)REGISTER/Reg_File_reg[8][0]/CK
+  (Sync)REGISTER/Reg_File_reg[4][7]/CK
+  (Sync)REGISTER/Reg_File_reg[4][6]/CK
+  (Sync)REGISTER/Reg_File_reg[4][5]/CK
+  (Sync)REGISTER/Reg_File_reg[4][4]/CK
+  (Sync)REGISTER/Reg_File_reg[4][3]/CK
+  (Sync)REGISTER/Reg_File_reg[4][2]/CK
+  (Sync)REGISTER/Reg_File_reg[4][1]/CK
+  (Sync)REGISTER/Reg_File_reg[4][0]/CK
+  (Sync)REGISTER/RdData_reg[7]/CK
+  (Sync)REGISTER/RdData_reg[6]/CK
+  (Sync)REGISTER/RdData_reg[5]/CK
+  (Sync)REGISTER/RdData_reg[4]/CK
+  (Sync)REGISTER/RdData_reg[3]/CK
+  (Sync)REGISTER/RdData_reg[2]/CK
+  (Sync)REGISTER/RdData_reg[1]/CK
+  (Sync)REGISTER/RdData_reg[0]/CK
+  (Sync)REGISTER/Reg_File_reg[3][0]/CK
+  (Sync)REGISTER/Reg_File_reg[2][1]/CK
+  (Sync)REGISTER/Reg_File_reg[0][7]/CK
+  (Sync)REGISTER/Reg_File_reg[0][6]/CK
+  (Sync)REGISTER/Reg_File_reg[0][5]/CK
+  (Sync)REGISTER/Reg_File_reg[0][4]/CK
+  (Sync)REGISTER/Reg_File_reg[0][3]/CK
+  (Sync)REGISTER/Reg_File_reg[0][2]/CK
+  (Sync)REGISTER/Reg_File_reg[0][1]/CK
+  (Sync)REGISTER/Reg_File_reg[0][0]/CK
+  (Sync)REGISTER/Reg_File_reg[2][0]/CK
+  (Sync)REGISTER/Reg_File_reg[1][5]/CK
+  (Sync)REGISTER/Reg_File_reg[1][4]/CK
+  (Sync)REGISTER/Reg_File_reg[1][7]/CK
+  (Sync)REGISTER/Reg_File_reg[1][1]/CK
+  (Sync)REGISTER/Reg_File_reg[1][3]/CK
+  (Sync)REGISTER/Reg_File_reg[1][2]/CK
+  (Sync)REGISTER/Reg_File_reg[1][6]/CK
+  (Sync)REGISTER/Reg_File_reg[1][0]/CK
+  (Sync)REGISTER/RdData_Valid_reg/CK
+  (Sync)REGISTER/Reg_File_reg[3][5]/CK
+  (Sync)REGISTER/Reg_File_reg[3][3]/CK
+  (Sync)REGISTER/Reg_File_reg[3][4]/CK
+  (Sync)REGISTER/Reg_File_reg[3][7]/CK
+  (Sync)REGISTER/Reg_File_reg[3][6]/CK
+  (Sync)REGISTER/Reg_File_reg[3][2]/CK
+  (Sync)REGISTER/Reg_File_reg[3][1]/CK
+  (Sync)REGISTER/Reg_File_reg[2][4]/CK
+  (Sync)REGISTER/Reg_File_reg[2][3]/CK
+  (Sync)REGISTER/Reg_File_reg[2][6]/CK
+  (Sync)REGISTER/Reg_File_reg[2][5]/CK
+  (Sync)REGISTER/Reg_File_reg[2][7]/CK
+  (Sync)REGISTER/Reg_File_reg[2][2]/CK
+  (Sync)U_system_control/TX_P_DATA_store_reg[6]/CK
+  (Sync)U_system_control/TX_P_DATA_store_reg[5]/CK
+  (Sync)U_system_control/TX_P_DATA_store_reg[4]/CK
+  (Sync)U_system_control/TX_P_DATA_store_reg[3]/CK
+  (Sync)U_system_control/TX_P_DATA_store_reg[2]/CK
+  (Sync)U_system_control/TX_P_DATA_store_reg[1]/CK
+  (Sync)U_system_control/TX_P_DATA_store_reg[0]/CK
+  (Sync)U_system_control/store_ALU_OUT_reg[15]/CK
+  (Sync)U_system_control/store_ALU_OUT_reg[14]/CK
+  (Sync)U_system_control/store_ALU_OUT_reg[13]/CK
+  (Sync)U_system_control/store_ALU_OUT_reg[12]/CK
+  (Sync)U_system_control/store_ALU_OUT_reg[11]/CK
+  (Sync)U_system_control/store_ALU_OUT_reg[10]/CK
+  (Sync)U_system_control/store_ALU_OUT_reg[9]/CK
+  (Sync)U_system_control/store_ALU_OUT_reg[8]/CK
+  (Sync)U_system_control/RX_D_VLD_delayed_reg/CK
+  (Sync)U_system_control/storeadd_reg[3]/CK
+  (Sync)U_system_control/storeadd_reg[2]/CK
+  (Sync)U_system_control/storeadd_reg[1]/CK
+  (Sync)U_system_control/storeadd_reg[0]/CK
+  (Sync)U_system_control/current_state_reg[2]/CK
+  (Sync)U_system_control/current_state_reg[1]/CK
+  (Sync)U_system_control/current_state_reg[3]/CK
+  (Sync)U_system_control/current_state_reg[0]/CK
+  (Sync)U_system_control/TX_P_DATA_store_reg[7]/CK
+  (Sync)RSTSYNC1/sync_reg_reg[0]/CK
+  (Sync)RSTSYNC1/sync_reg_reg[1]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[5][7]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[5][6]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[5][5]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[5][4]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[5][3]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[5][2]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[5][1]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[5][0]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[1][7]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[1][6]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[1][5]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[1][4]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[1][3]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[1][2]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[1][1]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[1][0]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[7][7]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[7][6]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[7][5]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[7][4]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[7][3]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[7][2]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[7][1]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[7][0]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[3][7]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[3][6]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[3][5]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[3][4]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[3][3]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[3][2]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[3][1]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[3][0]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[6][7]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[6][6]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[6][5]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[6][4]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[6][3]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[6][2]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[6][1]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[6][0]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[2][7]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[2][6]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[2][5]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[2][4]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[2][3]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[2][2]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[2][1]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[2][0]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[4][7]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[4][6]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[4][5]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[4][4]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[4][3]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[4][2]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[4][1]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[4][0]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[0][7]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[0][6]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[0][5]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[0][4]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[0][3]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[0][2]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[0][1]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[0][0]/CK
+  (Sync)FIFO/WR/w_binary_reg[3]/CK
+  (Sync)FIFO/WR/w_binary_reg[2]/CK
+  (Sync)FIFO/WR/wfull_reg/CK
+  (Sync)FIFO/WR/w_binary_reg[0]/CK
+  (Sync)FIFO/WR/w_binary_reg[1]/CK
+  (Sync)FIFO/WR/wptr_reg[3]/CK
+  (Sync)FIFO/WR/wptr_reg[2]/CK
+  (Sync)FIFO/WR/wptr_reg[1]/CK
+  (Sync)FIFO/WR/wptr_reg[0]/CK
+  (Sync)FIFO/sync_r2w/sync_reg_reg[3][1]/CK
+  (Sync)FIFO/sync_r2w/sync_reg_reg[2][1]/CK
+  (Sync)FIFO/sync_r2w/sync_reg_reg[1][1]/CK
+  (Sync)FIFO/sync_r2w/sync_reg_reg[0][1]/CK
+  (Sync)FIFO/sync_r2w/sync_reg_reg[3][0]/CK
+  (Sync)FIFO/sync_r2w/sync_reg_reg[2][0]/CK
+  (Sync)FIFO/sync_r2w/sync_reg_reg[1][0]/CK
+  (Sync)FIFO/sync_r2w/sync_reg_reg[0][0]/CK
+  *DEPTH 2: CLK_GATE/U0_TLATNCAX12M(CK->ECK)
+   (Sync)ALU/ALU_OUT_reg[7]/CK
+   (Sync)ALU/ALU_OUT_reg[6]/CK
+   (Sync)ALU/ALU_OUT_reg[5]/CK
+   (Sync)ALU/ALU_OUT_reg[4]/CK
+   (Sync)ALU/ALU_OUT_reg[3]/CK
+   (Sync)ALU/ALU_OUT_reg[2]/CK
+   (Sync)ALU/ALU_OUT_reg[1]/CK
+   (Sync)ALU/ALU_OUT_reg[0]/CK
+   (Sync)ALU/OUT_VALID_reg/CK
+   (Sync)ALU/ALU_OUT_reg[15]/CK
+   (Sync)ALU/ALU_OUT_reg[14]/CK
+   (Sync)ALU/ALU_OUT_reg[13]/CK
+   (Sync)ALU/ALU_OUT_reg[12]/CK
+   (Sync)ALU/ALU_OUT_reg[11]/CK
+   (Sync)ALU/ALU_OUT_reg[10]/CK
+   (Sync)ALU/ALU_OUT_reg[9]/CK
+   (Sync)ALU/ALU_OUT_reg[8]/CK
+ *DEPTH 1: U1_mux2X1/U1(B->Y)
+  (Sync)clock_divider_RX/flag_reg/CK
+  (Sync)clock_divider_RX/counter_reg[7]/CK
+  (Sync)clock_divider_RX/counter_reg[0]/CK
+  (Sync)clock_divider_RX/counter_reg[6]/CK
+  (Sync)clock_divider_RX/counter_reg[4]/CK
+  (Sync)clock_divider_RX/counter_reg[3]/CK
+  (Sync)clock_divider_RX/counter_reg[5]/CK
+  (Sync)clock_divider_RX/counter_reg[1]/CK
+  (Sync)clock_divider_RX/counter_reg[2]/CK
+  (Sync)RSTSYNC2/sync_reg_reg[0]/CK
+  (Sync)clock_divider_TX/flag_reg/CK
+  (Sync)clock_divider_TX/counter_reg[7]/CK
+  (Sync)clock_divider_TX/counter_reg[0]/CK
+  (Sync)clock_divider_TX/counter_reg[6]/CK
+  (Sync)clock_divider_TX/counter_reg[4]/CK
+  (Sync)clock_divider_TX/counter_reg[3]/CK
+  (Sync)clock_divider_TX/counter_reg[5]/CK
+  (Sync)clock_divider_TX/counter_reg[1]/CK
+  (Sync)clock_divider_TX/counter_reg[2]/CK
+  *DEPTH 2: clock_divider_RX/div_clk_reg(CK->Q)
+   (Excl)clock_divider_RX/flag_reg/SI
+   (Excl)clock_divider_RX/U33/S0
+   *DEPTH 3: clock_divider_RX/U29(B->Y)
+    *DEPTH 4: U3_mux2X1/U1(A->Y)
+     (Sync)RX/DUT1/current_state_reg[0]/CK
+     (Sync)RX/DUT1/current_state_reg[1]/CK
+     (Sync)RX/DUT1/current_state_reg[2]/CK
+     (Sync)RX/DUT2/bit_cnt_reg[3]/CK
+     (Sync)RX/DUT2/bit_cnt_reg[2]/CK
+     (Sync)RX/DUT2/bit_cnt_reg[0]/CK
+     (Sync)RX/DUT2/bit_cnt_reg[1]/CK
+     (Sync)RX/DUT2/edge_cnt_reg[4]/CK
+     (Sync)RX/DUT2/edge_cnt_reg[0]/CK
+     (Sync)RX/DUT2/edge_cnt_reg[1]/CK
+     (Sync)RX/DUT2/edge_cnt_reg[3]/CK
+     (Sync)RX/DUT2/edge_cnt_reg[2]/CK
+     (Sync)RX/DUT3/majority_reg[1]/CK
+     (Sync)RX/DUT3/majority_reg[0]/CK
+     (Sync)RX/DUT3/sampled_bit_reg/CK
+     (Sync)RX/DUT4/expected_parity_reg/CK
+     (Sync)RX/DUT4/par_err_reg/CK
+     (Sync)RX/DUT5/P_DATA_reg[5]/CK
+     (Sync)RX/DUT5/P_DATA_reg[1]/CK
+     (Sync)RX/DUT5/P_DATA_reg[4]/CK
+     (Sync)RX/DUT5/P_DATA_reg[0]/CK
+     (Sync)RX/DUT5/P_DATA_reg[3]/CK
+     (Sync)RX/DUT5/P_DATA_reg[2]/CK
+     (Sync)RX/DUT5/P_DATA_reg[6]/CK
+     (Sync)RX/DUT5/P_DATA_reg[7]/CK
+     (Sync)RX/DUT5/i_reg[2]/CK
+     (Sync)RX/DUT5/i_reg[0]/CK
+     (Sync)RX/DUT5/i_reg[1]/CK
+     (Sync)RX/DUT6/strt_glitch_reg/CK
+     (Sync)RX/DUT7/stp_err_reg/CK
+  *DEPTH 2: clock_divider_RX/U29(A->Y)
+   *DEPTH 3: U3_mux2X1/U1(A->Y)
+    (Sync)RX/DUT1/current_state_reg[0]/CK
+    (Sync)RX/DUT1/current_state_reg[1]/CK
+    (Sync)RX/DUT1/current_state_reg[2]/CK
+    (Sync)RX/DUT2/bit_cnt_reg[3]/CK
+    (Sync)RX/DUT2/bit_cnt_reg[2]/CK
+    (Sync)RX/DUT2/bit_cnt_reg[0]/CK
+    (Sync)RX/DUT2/bit_cnt_reg[1]/CK
+    (Sync)RX/DUT2/edge_cnt_reg[4]/CK
+    (Sync)RX/DUT2/edge_cnt_reg[0]/CK
+    (Sync)RX/DUT2/edge_cnt_reg[1]/CK
+    (Sync)RX/DUT2/edge_cnt_reg[3]/CK
+    (Sync)RX/DUT2/edge_cnt_reg[2]/CK
+    (Sync)RX/DUT3/majority_reg[1]/CK
+    (Sync)RX/DUT3/majority_reg[0]/CK
+    (Sync)RX/DUT3/sampled_bit_reg/CK
+    (Sync)RX/DUT4/expected_parity_reg/CK
+    (Sync)RX/DUT4/par_err_reg/CK
+    (Sync)RX/DUT5/P_DATA_reg[5]/CK
+    (Sync)RX/DUT5/P_DATA_reg[1]/CK
+    (Sync)RX/DUT5/P_DATA_reg[4]/CK
+    (Sync)RX/DUT5/P_DATA_reg[0]/CK
+    (Sync)RX/DUT5/P_DATA_reg[3]/CK
+    (Sync)RX/DUT5/P_DATA_reg[2]/CK
+    (Sync)RX/DUT5/P_DATA_reg[6]/CK
+    (Sync)RX/DUT5/P_DATA_reg[7]/CK
+    (Sync)RX/DUT5/i_reg[2]/CK
+    (Sync)RX/DUT5/i_reg[0]/CK
+    (Sync)RX/DUT5/i_reg[1]/CK
+    (Sync)RX/DUT6/strt_glitch_reg/CK
+    (Sync)RX/DUT7/stp_err_reg/CK
+  *DEPTH 2: RSTSYNC2/sync_reg_reg[1](CK->Q)
+   (Excl)RX/DUT1/current_state_reg[0]/SI
+   *DEPTH 3: U7_mux2X1/U1(A->Y)
+    (Excl)RX/DUT1/current_state_reg[0]/RN
+    (Excl)RX/DUT1/current_state_reg[1]/RN
+    (Excl)RX/DUT1/current_state_reg[2]/RN
+    (Excl)RX/DUT2/bit_cnt_reg[3]/RN
+    (Excl)RX/DUT2/bit_cnt_reg[2]/RN
+    (Excl)RX/DUT2/bit_cnt_reg[0]/RN
+    (Excl)RX/DUT2/bit_cnt_reg[1]/RN
+    (Excl)RX/DUT2/edge_cnt_reg[4]/RN
+    (Excl)RX/DUT2/edge_cnt_reg[0]/RN
+    (Excl)RX/DUT2/edge_cnt_reg[1]/RN
+    (Excl)RX/DUT2/edge_cnt_reg[3]/RN
+    (Excl)RX/DUT2/edge_cnt_reg[2]/RN
+    (Excl)RX/DUT3/majority_reg[1]/RN
+    (Excl)RX/DUT3/majority_reg[0]/RN
+    (Excl)RX/DUT3/sampled_bit_reg/RN
+    (Excl)RX/DUT4/expected_parity_reg/RN
+    (Excl)RX/DUT4/par_err_reg/RN
+    (Excl)RX/DUT5/P_DATA_reg[5]/RN
+    (Excl)RX/DUT5/P_DATA_reg[1]/RN
+    (Excl)RX/DUT5/P_DATA_reg[4]/RN
+    (Excl)RX/DUT5/P_DATA_reg[0]/RN
+    (Excl)RX/DUT5/P_DATA_reg[3]/RN
+    (Excl)RX/DUT5/P_DATA_reg[2]/RN
+    (Excl)RX/DUT5/P_DATA_reg[6]/RN
+    (Excl)RX/DUT5/P_DATA_reg[7]/RN
+    (Excl)RX/DUT5/i_reg[2]/RN
+    (Excl)RX/DUT5/i_reg[0]/RN
+    (Excl)RX/DUT5/i_reg[1]/RN
+    (Excl)RX/DUT6/strt_glitch_reg/RN
+    (Excl)RX/DUT7/stp_err_reg/RN
+    (Excl)clock_divider_RX/div_clk_reg/RN
+    (Excl)clock_divider_RX/flag_reg/RN
+    (Excl)clock_divider_RX/counter_reg[7]/RN
+    (Excl)clock_divider_RX/counter_reg[0]/RN
+    (Excl)clock_divider_RX/counter_reg[6]/RN
+    (Excl)clock_divider_RX/counter_reg[4]/RN
+    (Excl)clock_divider_RX/counter_reg[3]/RN
+    (Excl)clock_divider_RX/counter_reg[5]/RN
+    (Excl)clock_divider_RX/counter_reg[1]/RN
+    (Excl)clock_divider_RX/counter_reg[2]/RN
+    (Excl)FIFO/RD/r_binary_reg[3]/RN
+    (Excl)FIFO/RD/r_binary_reg[0]/RN
+    (Excl)FIFO/RD/r_binary_reg[2]/RN
+    (Excl)FIFO/RD/r_binary_reg[1]/RN
+    (Excl)FIFO/RD/rptr_reg[3]/RN
+    (Excl)FIFO/RD/rptr_reg[2]/RN
+    (Excl)FIFO/RD/rptr_reg[1]/RN
+    (Excl)FIFO/RD/rptr_reg[0]/RN
+    (Excl)FIFO/RD/rempty_reg/SN
+    (Excl)FIFO/sync_w2r/sync_reg_reg[3][1]/RN
+    (Excl)FIFO/sync_w2r/sync_reg_reg[2][1]/RN
+    (Excl)FIFO/sync_w2r/sync_reg_reg[1][1]/RN
+    (Excl)FIFO/sync_w2r/sync_reg_reg[0][1]/RN
+    (Excl)FIFO/sync_w2r/sync_reg_reg[3][0]/RN
+    (Excl)FIFO/sync_w2r/sync_reg_reg[2][0]/RN
+    (Excl)FIFO/sync_w2r/sync_reg_reg[1][0]/RN
+    (Excl)FIFO/sync_w2r/sync_reg_reg[0][0]/RN
+    (Excl)TX/DUT1/SER_DATA_reg/RN
+    (Excl)TX/DUT1/S_DATA_reg[0]/RN
+    (Excl)TX/DUT1/S_DATA_reg[6]/RN
+    (Excl)TX/DUT1/S_DATA_reg[5]/RN
+    (Excl)TX/DUT1/S_DATA_reg[4]/RN
+    (Excl)TX/DUT1/S_DATA_reg[3]/RN
+    (Excl)TX/DUT1/S_DATA_reg[2]/RN
+    (Excl)TX/DUT1/S_DATA_reg[1]/RN
+    (Excl)TX/DUT1/SER_DONE_reg/RN
+    (Excl)TX/DUT1/COUNT_reg[2]/RN
+    (Excl)TX/DUT1/COUNT_reg[1]/RN
+    (Excl)TX/DUT1/COUNT_reg[0]/RN
+    (Excl)TX/DUT2/current_state_reg[0]/RN
+    (Excl)TX/DUT2/current_state_reg[2]/RN
+    (Excl)TX/DUT2/current_state_reg[1]/RN
+    (Excl)TX/DUT3/par_bit_reg/RN
+    (Excl)clock_divider_TX/div_clk_reg/RN
+    (Excl)clock_divider_TX/flag_reg/RN
+    (Excl)clock_divider_TX/counter_reg[7]/RN
+    (Excl)clock_divider_TX/counter_reg[0]/RN
+    (Excl)clock_divider_TX/counter_reg[6]/RN
+    (Excl)clock_divider_TX/counter_reg[4]/RN
+    (Excl)clock_divider_TX/counter_reg[3]/RN
+    (Excl)clock_divider_TX/counter_reg[5]/RN
+    (Excl)clock_divider_TX/counter_reg[1]/RN
+    (Excl)clock_divider_TX/counter_reg[2]/RN
+    (Excl)pulse_gen/rcv_flop_reg/RN
+    (Excl)pulse_gen/pls_flop_reg/RN
+    *DEPTH 4: clock_divider_RX/U30(AN->Y)
+     *DEPTH 5: clock_divider_RX/U29(S0->Y)
+      *DEPTH 6: U3_mux2X1/U1(A->Y)
+       (Sync)RX/DUT1/current_state_reg[0]/CK
+       (Sync)RX/DUT1/current_state_reg[1]/CK
+       (Sync)RX/DUT1/current_state_reg[2]/CK
+       (Sync)RX/DUT2/bit_cnt_reg[3]/CK
+       (Sync)RX/DUT2/bit_cnt_reg[2]/CK
+       (Sync)RX/DUT2/bit_cnt_reg[0]/CK
+       (Sync)RX/DUT2/bit_cnt_reg[1]/CK
+       (Sync)RX/DUT2/edge_cnt_reg[4]/CK
+       (Sync)RX/DUT2/edge_cnt_reg[0]/CK
+       (Sync)RX/DUT2/edge_cnt_reg[1]/CK
+       (Sync)RX/DUT2/edge_cnt_reg[3]/CK
+       (Sync)RX/DUT2/edge_cnt_reg[2]/CK
+       (Sync)RX/DUT3/majority_reg[1]/CK
+       (Sync)RX/DUT3/majority_reg[0]/CK
+       (Sync)RX/DUT3/sampled_bit_reg/CK
+       (Sync)RX/DUT4/expected_parity_reg/CK
+       (Sync)RX/DUT4/par_err_reg/CK
+       (Sync)RX/DUT5/P_DATA_reg[5]/CK
+       (Sync)RX/DUT5/P_DATA_reg[1]/CK
+       (Sync)RX/DUT5/P_DATA_reg[4]/CK
+       (Sync)RX/DUT5/P_DATA_reg[0]/CK
+       (Sync)RX/DUT5/P_DATA_reg[3]/CK
+       (Sync)RX/DUT5/P_DATA_reg[2]/CK
+       (Sync)RX/DUT5/P_DATA_reg[6]/CK
+       (Sync)RX/DUT5/P_DATA_reg[7]/CK
+       (Sync)RX/DUT5/i_reg[2]/CK
+       (Sync)RX/DUT5/i_reg[0]/CK
+       (Sync)RX/DUT5/i_reg[1]/CK
+       (Sync)RX/DUT6/strt_glitch_reg/CK
+       (Sync)RX/DUT7/stp_err_reg/CK
+    *DEPTH 4: clock_divider_TX/U30(AN->Y)
+     *DEPTH 5: clock_divider_TX/U29(S0->Y)
+      *DEPTH 6: U4_mux2X1/U1(A->Y)
+       (Sync)FIFO/RD/r_binary_reg[3]/CK
+       (Sync)FIFO/RD/r_binary_reg[0]/CK
+       (Sync)FIFO/RD/r_binary_reg[2]/CK
+       (Sync)FIFO/RD/r_binary_reg[1]/CK
+       (Sync)FIFO/RD/rptr_reg[3]/CK
+       (Sync)FIFO/RD/rptr_reg[2]/CK
+       (Sync)FIFO/RD/rptr_reg[1]/CK
+       (Sync)FIFO/RD/rptr_reg[0]/CK
+       (Sync)FIFO/RD/rempty_reg/CK
+       (Sync)FIFO/sync_w2r/sync_reg_reg[3][1]/CK
+       (Sync)FIFO/sync_w2r/sync_reg_reg[2][1]/CK
+       (Sync)FIFO/sync_w2r/sync_reg_reg[1][1]/CK
+       (Sync)FIFO/sync_w2r/sync_reg_reg[0][1]/CK
+       (Sync)FIFO/sync_w2r/sync_reg_reg[3][0]/CK
+       (Sync)FIFO/sync_w2r/sync_reg_reg[2][0]/CK
+       (Sync)FIFO/sync_w2r/sync_reg_reg[1][0]/CK
+       (Sync)FIFO/sync_w2r/sync_reg_reg[0][0]/CK
+       (Sync)TX/DUT1/SER_DATA_reg/CK
+       (Sync)TX/DUT1/S_DATA_reg[0]/CK
+       (Sync)TX/DUT1/S_DATA_reg[6]/CK
+       (Sync)TX/DUT1/S_DATA_reg[5]/CK
+       (Sync)TX/DUT1/S_DATA_reg[4]/CK
+       (Sync)TX/DUT1/S_DATA_reg[3]/CK
+       (Sync)TX/DUT1/S_DATA_reg[2]/CK
+       (Sync)TX/DUT1/S_DATA_reg[1]/CK
+       (Sync)TX/DUT1/SER_DONE_reg/CK
+       (Sync)TX/DUT1/COUNT_reg[2]/CK
+       (Sync)TX/DUT1/COUNT_reg[1]/CK
+       (Sync)TX/DUT1/COUNT_reg[0]/CK
+       (Sync)TX/DUT2/current_state_reg[0]/CK
+       (Sync)TX/DUT2/current_state_reg[2]/CK
+       (Sync)TX/DUT2/current_state_reg[1]/CK
+       (Sync)TX/DUT3/par_bit_reg/CK
+       (Sync)pulse_gen/rcv_flop_reg/CK
+       (Sync)pulse_gen/pls_flop_reg/CK
+  *DEPTH 2: clock_divider_TX/div_clk_reg(CK->Q)
+   (Excl)clock_divider_TX/flag_reg/SI
+   (Excl)clock_divider_TX/U33/S0
+   *DEPTH 3: clock_divider_TX/U29(B->Y)
+    *DEPTH 4: U4_mux2X1/U1(A->Y)
+     (Sync)FIFO/RD/r_binary_reg[3]/CK
+     (Sync)FIFO/RD/r_binary_reg[0]/CK
+     (Sync)FIFO/RD/r_binary_reg[2]/CK
+     (Sync)FIFO/RD/r_binary_reg[1]/CK
+     (Sync)FIFO/RD/rptr_reg[3]/CK
+     (Sync)FIFO/RD/rptr_reg[2]/CK
+     (Sync)FIFO/RD/rptr_reg[1]/CK
+     (Sync)FIFO/RD/rptr_reg[0]/CK
+     (Sync)FIFO/RD/rempty_reg/CK
+     (Sync)FIFO/sync_w2r/sync_reg_reg[3][1]/CK
+     (Sync)FIFO/sync_w2r/sync_reg_reg[2][1]/CK
+     (Sync)FIFO/sync_w2r/sync_reg_reg[1][1]/CK
+     (Sync)FIFO/sync_w2r/sync_reg_reg[0][1]/CK
+     (Sync)FIFO/sync_w2r/sync_reg_reg[3][0]/CK
+     (Sync)FIFO/sync_w2r/sync_reg_reg[2][0]/CK
+     (Sync)FIFO/sync_w2r/sync_reg_reg[1][0]/CK
+     (Sync)FIFO/sync_w2r/sync_reg_reg[0][0]/CK
+     (Sync)TX/DUT1/SER_DATA_reg/CK
+     (Sync)TX/DUT1/S_DATA_reg[0]/CK
+     (Sync)TX/DUT1/S_DATA_reg[6]/CK
+     (Sync)TX/DUT1/S_DATA_reg[5]/CK
+     (Sync)TX/DUT1/S_DATA_reg[4]/CK
+     (Sync)TX/DUT1/S_DATA_reg[3]/CK
+     (Sync)TX/DUT1/S_DATA_reg[2]/CK
+     (Sync)TX/DUT1/S_DATA_reg[1]/CK
+     (Sync)TX/DUT1/SER_DONE_reg/CK
+     (Sync)TX/DUT1/COUNT_reg[2]/CK
+     (Sync)TX/DUT1/COUNT_reg[1]/CK
+     (Sync)TX/DUT1/COUNT_reg[0]/CK
+     (Sync)TX/DUT2/current_state_reg[0]/CK
+     (Sync)TX/DUT2/current_state_reg[2]/CK
+     (Sync)TX/DUT2/current_state_reg[1]/CK
+     (Sync)TX/DUT3/par_bit_reg/CK
+     (Sync)pulse_gen/rcv_flop_reg/CK
+     (Sync)pulse_gen/pls_flop_reg/CK
+  *DEPTH 2: clock_divider_TX/U29(A->Y)
+   *DEPTH 3: U4_mux2X1/U1(A->Y)
+    (Sync)FIFO/RD/r_binary_reg[3]/CK
+    (Sync)FIFO/RD/r_binary_reg[0]/CK
+    (Sync)FIFO/RD/r_binary_reg[2]/CK
+    (Sync)FIFO/RD/r_binary_reg[1]/CK
+    (Sync)FIFO/RD/rptr_reg[3]/CK
+    (Sync)FIFO/RD/rptr_reg[2]/CK
+    (Sync)FIFO/RD/rptr_reg[1]/CK
+    (Sync)FIFO/RD/rptr_reg[0]/CK
+    (Sync)FIFO/RD/rempty_reg/CK
+    (Sync)FIFO/sync_w2r/sync_reg_reg[3][1]/CK
+    (Sync)FIFO/sync_w2r/sync_reg_reg[2][1]/CK
+    (Sync)FIFO/sync_w2r/sync_reg_reg[1][1]/CK
+    (Sync)FIFO/sync_w2r/sync_reg_reg[0][1]/CK
+    (Sync)FIFO/sync_w2r/sync_reg_reg[3][0]/CK
+    (Sync)FIFO/sync_w2r/sync_reg_reg[2][0]/CK
+    (Sync)FIFO/sync_w2r/sync_reg_reg[1][0]/CK
+    (Sync)FIFO/sync_w2r/sync_reg_reg[0][0]/CK
+    (Sync)TX/DUT1/SER_DATA_reg/CK
+    (Sync)TX/DUT1/S_DATA_reg[0]/CK
+    (Sync)TX/DUT1/S_DATA_reg[6]/CK
+    (Sync)TX/DUT1/S_DATA_reg[5]/CK
+    (Sync)TX/DUT1/S_DATA_reg[4]/CK
+    (Sync)TX/DUT1/S_DATA_reg[3]/CK
+    (Sync)TX/DUT1/S_DATA_reg[2]/CK
+    (Sync)TX/DUT1/S_DATA_reg[1]/CK
+    (Sync)TX/DUT1/SER_DONE_reg/CK
+    (Sync)TX/DUT1/COUNT_reg[2]/CK
+    (Sync)TX/DUT1/COUNT_reg[1]/CK
+    (Sync)TX/DUT1/COUNT_reg[0]/CK
+    (Sync)TX/DUT2/current_state_reg[0]/CK
+    (Sync)TX/DUT2/current_state_reg[2]/CK
+    (Sync)TX/DUT2/current_state_reg[1]/CK
+    (Sync)TX/DUT3/par_bit_reg/CK
+    (Sync)pulse_gen/rcv_flop_reg/CK
+    (Sync)pulse_gen/pls_flop_reg/CK
+ *DEPTH 1: U3_mux2X1/U1(B->Y)
+  (Sync)RX/DUT1/current_state_reg[0]/CK
+  (Sync)RX/DUT1/current_state_reg[1]/CK
+  (Sync)RX/DUT1/current_state_reg[2]/CK
+  (Sync)RX/DUT2/bit_cnt_reg[3]/CK
+  (Sync)RX/DUT2/bit_cnt_reg[2]/CK
+  (Sync)RX/DUT2/bit_cnt_reg[0]/CK
+  (Sync)RX/DUT2/bit_cnt_reg[1]/CK
+  (Sync)RX/DUT2/edge_cnt_reg[4]/CK
+  (Sync)RX/DUT2/edge_cnt_reg[0]/CK
+  (Sync)RX/DUT2/edge_cnt_reg[1]/CK
+  (Sync)RX/DUT2/edge_cnt_reg[3]/CK
+  (Sync)RX/DUT2/edge_cnt_reg[2]/CK
+  (Sync)RX/DUT3/majority_reg[1]/CK
+  (Sync)RX/DUT3/majority_reg[0]/CK
+  (Sync)RX/DUT3/sampled_bit_reg/CK
+  (Sync)RX/DUT4/expected_parity_reg/CK
+  (Sync)RX/DUT4/par_err_reg/CK
+  (Sync)RX/DUT5/P_DATA_reg[5]/CK
+  (Sync)RX/DUT5/P_DATA_reg[1]/CK
+  (Sync)RX/DUT5/P_DATA_reg[4]/CK
+  (Sync)RX/DUT5/P_DATA_reg[0]/CK
+  (Sync)RX/DUT5/P_DATA_reg[3]/CK
+  (Sync)RX/DUT5/P_DATA_reg[2]/CK
+  (Sync)RX/DUT5/P_DATA_reg[6]/CK
+  (Sync)RX/DUT5/P_DATA_reg[7]/CK
+  (Sync)RX/DUT5/i_reg[2]/CK
+  (Sync)RX/DUT5/i_reg[0]/CK
+  (Sync)RX/DUT5/i_reg[1]/CK
+  (Sync)RX/DUT6/strt_glitch_reg/CK
+  (Sync)RX/DUT7/stp_err_reg/CK
+ *DEPTH 1: U4_mux2X1/U1(B->Y)
+  (Sync)FIFO/RD/r_binary_reg[3]/CK
+  (Sync)FIFO/RD/r_binary_reg[0]/CK
+  (Sync)FIFO/RD/r_binary_reg[2]/CK
+  (Sync)FIFO/RD/r_binary_reg[1]/CK
+  (Sync)FIFO/RD/rptr_reg[3]/CK
+  (Sync)FIFO/RD/rptr_reg[2]/CK
+  (Sync)FIFO/RD/rptr_reg[1]/CK
+  (Sync)FIFO/RD/rptr_reg[0]/CK
+  (Sync)FIFO/RD/rempty_reg/CK
+  (Sync)FIFO/sync_w2r/sync_reg_reg[3][1]/CK
+  (Sync)FIFO/sync_w2r/sync_reg_reg[2][1]/CK
+  (Sync)FIFO/sync_w2r/sync_reg_reg[1][1]/CK
+  (Sync)FIFO/sync_w2r/sync_reg_reg[0][1]/CK
+  (Sync)FIFO/sync_w2r/sync_reg_reg[3][0]/CK
+  (Sync)FIFO/sync_w2r/sync_reg_reg[2][0]/CK
+  (Sync)FIFO/sync_w2r/sync_reg_reg[1][0]/CK
+  (Sync)FIFO/sync_w2r/sync_reg_reg[0][0]/CK
+  (Sync)TX/DUT1/SER_DATA_reg/CK
+  (Sync)TX/DUT1/S_DATA_reg[0]/CK
+  (Sync)TX/DUT1/S_DATA_reg[6]/CK
+  (Sync)TX/DUT1/S_DATA_reg[5]/CK
+  (Sync)TX/DUT1/S_DATA_reg[4]/CK
+  (Sync)TX/DUT1/S_DATA_reg[3]/CK
+  (Sync)TX/DUT1/S_DATA_reg[2]/CK
+  (Sync)TX/DUT1/S_DATA_reg[1]/CK
+  (Sync)TX/DUT1/SER_DONE_reg/CK
+  (Sync)TX/DUT1/COUNT_reg[2]/CK
+  (Sync)TX/DUT1/COUNT_reg[1]/CK
+  (Sync)TX/DUT1/COUNT_reg[0]/CK
+  (Sync)TX/DUT2/current_state_reg[0]/CK
+  (Sync)TX/DUT2/current_state_reg[2]/CK
+  (Sync)TX/DUT2/current_state_reg[1]/CK
+  (Sync)TX/DUT3/par_bit_reg/CK
+  (Sync)pulse_gen/rcv_flop_reg/CK
+  (Sync)pulse_gen/pls_flop_reg/CK
+
+
+
+
+
+Tracing Clock UART_CLK
+Pin U1_mux2X1/U1/Y is a crossover pin in Clock scan_clk
+
+****** Clock Tree (UART_CLK) Structure
+Nr. Subtrees                   : 12
+Nr. Sinks                      : 84
+Nr.          Rising  Sync Pins : 54
+Nr. Inverter Rising  Sync Pins : 0
+Nr. Inv/NonInv Rising Sync Pins : 30 (due to reconvergence)
+Nr.          Falling Sync Pins : 0
+Nr. Inverter Falling Sync Pins : 0
+
+** Leaf Pins
+CELL (PORT)                            Nr.
+-----------------------------------------------
+SDFFRQX2M (CK)                          79
+SDFFSQX1M (CK)                          1
+SDFFRQX4M (CK)                          4
+-----------------------------------------------
+
+
+
+
+** Gate Component Input Pins
+CELL (PORT)                            Nr.
+-----------------------------------------------
+SDFFRQX1M (CK)                          1
+SDFFRQX2M (CK)                          2
+CLKMX2X2M (B)                           2
+NOR2BX1M (AN)                           2
+MX2X2M (A)                              4
+CLKMX2X2M (S0)                          2
+CLKMX2X2M (A)                           2
+-----------------------------------------------
+
+
+
+** Subtree Detail
+*DEPTH 0 Input_Pin: (EMPTY) Output_Pin: (UART_CLK) Cell: (EMPTY) Net: (UART_CLK) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Total Sync Pins        : 0
+          Nr. of     Rising  Sync Pins  : 0
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 1
+*DEPTH 1 Input_Pin: (U1_mux2X1/U1/A) Output_Pin: (U1_mux2X1/U1/Y) Cell: (MX2X2M) Net: (CLKR) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Total Sync Pins        : 19
+          Nr. of     Rising  Sync Pins  : 19
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 5
+*DEPTH 2 Input_Pin: (clock_divider_RX/div_clk_reg/CK) Output_Pin: (clock_divider_RX/div_clk_reg/Q) Cell: (SDFFRQX2M) Net: (clock_divider_RX/div_clk) NO-INV
+          Nr. of Exclude Pins           : 2
+          Nr. of Total Sync Pins        : 0
+          Nr. of     Rising  Sync Pins  : 0
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 1
+*DEPTH 3 Input_Pin: (clock_divider_RX/U29/B) Output_Pin: (clock_divider_RX/U29/Y) Cell: (CLKMX2X2M) Net: (RX_CLK) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Total Sync Pins        : 0
+          Nr. of     Rising  Sync Pins  : 0
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 1
+*DEPTH 4 Input_Pin: (U3_mux2X1/U1/A) Output_Pin: (U3_mux2X1/U1/Y) Cell: (MX2X2M) Net: (RX_CLK1) INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Total Sync Pins        : 30
+          Nr. of     Rising  Sync Pins  : 0
+          Nr. of Inv Rising  Sync Pins  : 30
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 0
+*DEPTH 2 Input_Pin: (clock_divider_RX/U29/A) Output_Pin: (clock_divider_RX/U29/Y) Cell: (CLKMX2X2M) Net: (RX_CLK) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Total Sync Pins        : 0
+          Nr. of     Rising  Sync Pins  : 0
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 1
+*DEPTH 3 Input_Pin: (U3_mux2X1/U1/A) Output_Pin: (U3_mux2X1/U1/Y) Cell: (MX2X2M) Net: (RX_CLK1) INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Total Sync Pins        : 30
+          Nr. of     Rising  Sync Pins  : 0
+          Nr. of Inv Rising  Sync Pins  : 30
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 0
+*DEPTH 2 Input_Pin: (RSTSYNC2/sync_reg_reg[1]/CK) Output_Pin: (RSTSYNC2/sync_reg_reg[1]/Q) Cell: (SDFFRQX1M) Net: (SYNC_RST2) NO-INV
+          Nr. of Exclude Pins           : 1
+          Nr. of Total Sync Pins        : 0
+          Nr. of     Rising  Sync Pins  : 0
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 1
+*DEPTH 3 Input_Pin: (U7_mux2X1/U1/A) Output_Pin: (U7_mux2X1/U1/Y) Cell: (MX2X2M) Net: (SYNC_RST22) NO-INV
+          Nr. of Exclude Pins           : 85
+          Nr. of Total Sync Pins        : 0
+          Nr. of     Rising  Sync Pins  : 0
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 2
+*DEPTH 4 Input_Pin: (clock_divider_RX/U30/AN) Output_Pin: (clock_divider_RX/U30/Y) Cell: (NOR2BX1M) Net: (clock_divider_RX/n7) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Total Sync Pins        : 0
+          Nr. of     Rising  Sync Pins  : 0
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 1
+*DEPTH 5 Input_Pin: (clock_divider_RX/U29/S0) Output_Pin: (clock_divider_RX/U29/Y) Cell: (CLKMX2X2M) Net: (RX_CLK) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Total Sync Pins        : 0
+          Nr. of     Rising  Sync Pins  : 0
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 1
+*DEPTH 6 Input_Pin: (U3_mux2X1/U1/A) Output_Pin: (U3_mux2X1/U1/Y) Cell: (MX2X2M) Net: (RX_CLK1) INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Total Sync Pins        : 30
+          Nr. of     Rising  Sync Pins  : 0
+          Nr. of Inv Rising  Sync Pins  : 30
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 0
+*DEPTH 4 Input_Pin: (clock_divider_TX/U30/AN) Output_Pin: (clock_divider_TX/U30/Y) Cell: (NOR2BX1M) Net: (clock_divider_TX/n7) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Total Sync Pins        : 0
+          Nr. of     Rising  Sync Pins  : 0
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 1
+*DEPTH 5 Input_Pin: (clock_divider_TX/U29/S0) Output_Pin: (clock_divider_TX/U29/Y) Cell: (CLKMX2X2M) Net: (TX_CLK) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Total Sync Pins        : 0
+          Nr. of     Rising  Sync Pins  : 0
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 1
+*DEPTH 6 Input_Pin: (U4_mux2X1/U1/A) Output_Pin: (U4_mux2X1/U1/Y) Cell: (MX2X2M) Net: (TX_CLK1) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Total Sync Pins        : 35
+          Nr. of     Rising  Sync Pins  : 35
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 0
+*DEPTH 2 Input_Pin: (clock_divider_TX/div_clk_reg/CK) Output_Pin: (clock_divider_TX/div_clk_reg/Q) Cell: (SDFFRQX2M) Net: (clock_divider_TX/div_clk) NO-INV
+          Nr. of Exclude Pins           : 2
+          Nr. of Total Sync Pins        : 0
+          Nr. of     Rising  Sync Pins  : 0
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 1
+*DEPTH 3 Input_Pin: (clock_divider_TX/U29/B) Output_Pin: (clock_divider_TX/U29/Y) Cell: (CLKMX2X2M) Net: (TX_CLK) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Total Sync Pins        : 0
+          Nr. of     Rising  Sync Pins  : 0
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 1
+*DEPTH 4 Input_Pin: (U4_mux2X1/U1/A) Output_Pin: (U4_mux2X1/U1/Y) Cell: (MX2X2M) Net: (TX_CLK1) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Total Sync Pins        : 35
+          Nr. of     Rising  Sync Pins  : 35
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 0
+*DEPTH 2 Input_Pin: (clock_divider_TX/U29/A) Output_Pin: (clock_divider_TX/U29/Y) Cell: (CLKMX2X2M) Net: (TX_CLK) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Total Sync Pins        : 0
+          Nr. of     Rising  Sync Pins  : 0
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 1
+*DEPTH 3 Input_Pin: (U4_mux2X1/U1/A) Output_Pin: (U4_mux2X1/U1/Y) Cell: (MX2X2M) Net: (TX_CLK1) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Total Sync Pins        : 35
+          Nr. of     Rising  Sync Pins  : 35
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 0
+***********************************************************
+
+****** Pre CTS Detail Structure for clock UART_CLK
+*DEPTH 0: UART_CLK
+ *DEPTH 1: U1_mux2X1/U1(A->Y)
+  (Sync)clock_divider_RX/flag_reg/CK
+  (Sync)clock_divider_RX/counter_reg[7]/CK
+  (Sync)clock_divider_RX/counter_reg[0]/CK
+  (Sync)clock_divider_RX/counter_reg[6]/CK
+  (Sync)clock_divider_RX/counter_reg[4]/CK
+  (Sync)clock_divider_RX/counter_reg[3]/CK
+  (Sync)clock_divider_RX/counter_reg[5]/CK
+  (Sync)clock_divider_RX/counter_reg[1]/CK
+  (Sync)clock_divider_RX/counter_reg[2]/CK
+  (Sync)RSTSYNC2/sync_reg_reg[0]/CK
+  (Sync)clock_divider_TX/flag_reg/CK
+  (Sync)clock_divider_TX/counter_reg[7]/CK
+  (Sync)clock_divider_TX/counter_reg[0]/CK
+  (Sync)clock_divider_TX/counter_reg[6]/CK
+  (Sync)clock_divider_TX/counter_reg[4]/CK
+  (Sync)clock_divider_TX/counter_reg[3]/CK
+  (Sync)clock_divider_TX/counter_reg[5]/CK
+  (Sync)clock_divider_TX/counter_reg[1]/CK
+  (Sync)clock_divider_TX/counter_reg[2]/CK
+  *DEPTH 2: clock_divider_RX/div_clk_reg(CK->Q)
+   (Excl)clock_divider_RX/flag_reg/SI
+   (Excl)clock_divider_RX/U33/S0
+   *DEPTH 3: clock_divider_RX/U29(B->Y)
+    *DEPTH 4: U3_mux2X1/U1(A->Y)
+     (Sync)RX/DUT1/current_state_reg[0]/CK
+     (Sync)RX/DUT1/current_state_reg[1]/CK
+     (Sync)RX/DUT1/current_state_reg[2]/CK
+     (Sync)RX/DUT2/bit_cnt_reg[3]/CK
+     (Sync)RX/DUT2/bit_cnt_reg[2]/CK
+     (Sync)RX/DUT2/bit_cnt_reg[0]/CK
+     (Sync)RX/DUT2/bit_cnt_reg[1]/CK
+     (Sync)RX/DUT2/edge_cnt_reg[4]/CK
+     (Sync)RX/DUT2/edge_cnt_reg[0]/CK
+     (Sync)RX/DUT2/edge_cnt_reg[1]/CK
+     (Sync)RX/DUT2/edge_cnt_reg[3]/CK
+     (Sync)RX/DUT2/edge_cnt_reg[2]/CK
+     (Sync)RX/DUT3/majority_reg[1]/CK
+     (Sync)RX/DUT3/majority_reg[0]/CK
+     (Sync)RX/DUT3/sampled_bit_reg/CK
+     (Sync)RX/DUT4/expected_parity_reg/CK
+     (Sync)RX/DUT4/par_err_reg/CK
+     (Sync)RX/DUT5/P_DATA_reg[5]/CK
+     (Sync)RX/DUT5/P_DATA_reg[1]/CK
+     (Sync)RX/DUT5/P_DATA_reg[4]/CK
+     (Sync)RX/DUT5/P_DATA_reg[0]/CK
+     (Sync)RX/DUT5/P_DATA_reg[3]/CK
+     (Sync)RX/DUT5/P_DATA_reg[2]/CK
+     (Sync)RX/DUT5/P_DATA_reg[6]/CK
+     (Sync)RX/DUT5/P_DATA_reg[7]/CK
+     (Sync)RX/DUT5/i_reg[2]/CK
+     (Sync)RX/DUT5/i_reg[0]/CK
+     (Sync)RX/DUT5/i_reg[1]/CK
+     (Sync)RX/DUT6/strt_glitch_reg/CK
+     (Sync)RX/DUT7/stp_err_reg/CK
+  *DEPTH 2: clock_divider_RX/U29(A->Y)
+   *DEPTH 3: U3_mux2X1/U1(A->Y)
+    (Sync)RX/DUT1/current_state_reg[0]/CK
+    (Sync)RX/DUT1/current_state_reg[1]/CK
+    (Sync)RX/DUT1/current_state_reg[2]/CK
+    (Sync)RX/DUT2/bit_cnt_reg[3]/CK
+    (Sync)RX/DUT2/bit_cnt_reg[2]/CK
+    (Sync)RX/DUT2/bit_cnt_reg[0]/CK
+    (Sync)RX/DUT2/bit_cnt_reg[1]/CK
+    (Sync)RX/DUT2/edge_cnt_reg[4]/CK
+    (Sync)RX/DUT2/edge_cnt_reg[0]/CK
+    (Sync)RX/DUT2/edge_cnt_reg[1]/CK
+    (Sync)RX/DUT2/edge_cnt_reg[3]/CK
+    (Sync)RX/DUT2/edge_cnt_reg[2]/CK
+    (Sync)RX/DUT3/majority_reg[1]/CK
+    (Sync)RX/DUT3/majority_reg[0]/CK
+    (Sync)RX/DUT3/sampled_bit_reg/CK
+    (Sync)RX/DUT4/expected_parity_reg/CK
+    (Sync)RX/DUT4/par_err_reg/CK
+    (Sync)RX/DUT5/P_DATA_reg[5]/CK
+    (Sync)RX/DUT5/P_DATA_reg[1]/CK
+    (Sync)RX/DUT5/P_DATA_reg[4]/CK
+    (Sync)RX/DUT5/P_DATA_reg[0]/CK
+    (Sync)RX/DUT5/P_DATA_reg[3]/CK
+    (Sync)RX/DUT5/P_DATA_reg[2]/CK
+    (Sync)RX/DUT5/P_DATA_reg[6]/CK
+    (Sync)RX/DUT5/P_DATA_reg[7]/CK
+    (Sync)RX/DUT5/i_reg[2]/CK
+    (Sync)RX/DUT5/i_reg[0]/CK
+    (Sync)RX/DUT5/i_reg[1]/CK
+    (Sync)RX/DUT6/strt_glitch_reg/CK
+    (Sync)RX/DUT7/stp_err_reg/CK
+  *DEPTH 2: RSTSYNC2/sync_reg_reg[1](CK->Q)
+   (Excl)RX/DUT1/current_state_reg[0]/SI
+   *DEPTH 3: U7_mux2X1/U1(A->Y)
+    (Excl)RX/DUT1/current_state_reg[0]/RN
+    (Excl)RX/DUT1/current_state_reg[1]/RN
+    (Excl)RX/DUT1/current_state_reg[2]/RN
+    (Excl)RX/DUT2/bit_cnt_reg[3]/RN
+    (Excl)RX/DUT2/bit_cnt_reg[2]/RN
+    (Excl)RX/DUT2/bit_cnt_reg[0]/RN
+    (Excl)RX/DUT2/bit_cnt_reg[1]/RN
+    (Excl)RX/DUT2/edge_cnt_reg[4]/RN
+    (Excl)RX/DUT2/edge_cnt_reg[0]/RN
+    (Excl)RX/DUT2/edge_cnt_reg[1]/RN
+    (Excl)RX/DUT2/edge_cnt_reg[3]/RN
+    (Excl)RX/DUT2/edge_cnt_reg[2]/RN
+    (Excl)RX/DUT3/majority_reg[1]/RN
+    (Excl)RX/DUT3/majority_reg[0]/RN
+    (Excl)RX/DUT3/sampled_bit_reg/RN
+    (Excl)RX/DUT4/expected_parity_reg/RN
+    (Excl)RX/DUT4/par_err_reg/RN
+    (Excl)RX/DUT5/P_DATA_reg[5]/RN
+    (Excl)RX/DUT5/P_DATA_reg[1]/RN
+    (Excl)RX/DUT5/P_DATA_reg[4]/RN
+    (Excl)RX/DUT5/P_DATA_reg[0]/RN
+    (Excl)RX/DUT5/P_DATA_reg[3]/RN
+    (Excl)RX/DUT5/P_DATA_reg[2]/RN
+    (Excl)RX/DUT5/P_DATA_reg[6]/RN
+    (Excl)RX/DUT5/P_DATA_reg[7]/RN
+    (Excl)RX/DUT5/i_reg[2]/RN
+    (Excl)RX/DUT5/i_reg[0]/RN
+    (Excl)RX/DUT5/i_reg[1]/RN
+    (Excl)RX/DUT6/strt_glitch_reg/RN
+    (Excl)RX/DUT7/stp_err_reg/RN
+    (Excl)clock_divider_RX/div_clk_reg/RN
+    (Excl)clock_divider_RX/flag_reg/RN
+    (Excl)clock_divider_RX/counter_reg[7]/RN
+    (Excl)clock_divider_RX/counter_reg[0]/RN
+    (Excl)clock_divider_RX/counter_reg[6]/RN
+    (Excl)clock_divider_RX/counter_reg[4]/RN
+    (Excl)clock_divider_RX/counter_reg[3]/RN
+    (Excl)clock_divider_RX/counter_reg[5]/RN
+    (Excl)clock_divider_RX/counter_reg[1]/RN
+    (Excl)clock_divider_RX/counter_reg[2]/RN
+    (Excl)FIFO/RD/r_binary_reg[3]/RN
+    (Excl)FIFO/RD/r_binary_reg[0]/RN
+    (Excl)FIFO/RD/r_binary_reg[2]/RN
+    (Excl)FIFO/RD/r_binary_reg[1]/RN
+    (Excl)FIFO/RD/rptr_reg[3]/RN
+    (Excl)FIFO/RD/rptr_reg[2]/RN
+    (Excl)FIFO/RD/rptr_reg[1]/RN
+    (Excl)FIFO/RD/rptr_reg[0]/RN
+    (Excl)FIFO/RD/rempty_reg/SN
+    (Excl)FIFO/sync_w2r/sync_reg_reg[3][1]/RN
+    (Excl)FIFO/sync_w2r/sync_reg_reg[2][1]/RN
+    (Excl)FIFO/sync_w2r/sync_reg_reg[1][1]/RN
+    (Excl)FIFO/sync_w2r/sync_reg_reg[0][1]/RN
+    (Excl)FIFO/sync_w2r/sync_reg_reg[3][0]/RN
+    (Excl)FIFO/sync_w2r/sync_reg_reg[2][0]/RN
+    (Excl)FIFO/sync_w2r/sync_reg_reg[1][0]/RN
+    (Excl)FIFO/sync_w2r/sync_reg_reg[0][0]/RN
+    (Excl)TX/DUT1/SER_DATA_reg/RN
+    (Excl)TX/DUT1/S_DATA_reg[0]/RN
+    (Excl)TX/DUT1/S_DATA_reg[6]/RN
+    (Excl)TX/DUT1/S_DATA_reg[5]/RN
+    (Excl)TX/DUT1/S_DATA_reg[4]/RN
+    (Excl)TX/DUT1/S_DATA_reg[3]/RN
+    (Excl)TX/DUT1/S_DATA_reg[2]/RN
+    (Excl)TX/DUT1/S_DATA_reg[1]/RN
+    (Excl)TX/DUT1/SER_DONE_reg/RN
+    (Excl)TX/DUT1/COUNT_reg[2]/RN
+    (Excl)TX/DUT1/COUNT_reg[1]/RN
+    (Excl)TX/DUT1/COUNT_reg[0]/RN
+    (Excl)TX/DUT2/current_state_reg[0]/RN
+    (Excl)TX/DUT2/current_state_reg[2]/RN
+    (Excl)TX/DUT2/current_state_reg[1]/RN
+    (Excl)TX/DUT3/par_bit_reg/RN
+    (Excl)clock_divider_TX/div_clk_reg/RN
+    (Excl)clock_divider_TX/flag_reg/RN
+    (Excl)clock_divider_TX/counter_reg[7]/RN
+    (Excl)clock_divider_TX/counter_reg[0]/RN
+    (Excl)clock_divider_TX/counter_reg[6]/RN
+    (Excl)clock_divider_TX/counter_reg[4]/RN
+    (Excl)clock_divider_TX/counter_reg[3]/RN
+    (Excl)clock_divider_TX/counter_reg[5]/RN
+    (Excl)clock_divider_TX/counter_reg[1]/RN
+    (Excl)clock_divider_TX/counter_reg[2]/RN
+    (Excl)pulse_gen/rcv_flop_reg/RN
+    (Excl)pulse_gen/pls_flop_reg/RN
+    *DEPTH 4: clock_divider_RX/U30(AN->Y)
+     *DEPTH 5: clock_divider_RX/U29(S0->Y)
+      *DEPTH 6: U3_mux2X1/U1(A->Y)
+       (Sync)RX/DUT1/current_state_reg[0]/CK
+       (Sync)RX/DUT1/current_state_reg[1]/CK
+       (Sync)RX/DUT1/current_state_reg[2]/CK
+       (Sync)RX/DUT2/bit_cnt_reg[3]/CK
+       (Sync)RX/DUT2/bit_cnt_reg[2]/CK
+       (Sync)RX/DUT2/bit_cnt_reg[0]/CK
+       (Sync)RX/DUT2/bit_cnt_reg[1]/CK
+       (Sync)RX/DUT2/edge_cnt_reg[4]/CK
+       (Sync)RX/DUT2/edge_cnt_reg[0]/CK
+       (Sync)RX/DUT2/edge_cnt_reg[1]/CK
+       (Sync)RX/DUT2/edge_cnt_reg[3]/CK
+       (Sync)RX/DUT2/edge_cnt_reg[2]/CK
+       (Sync)RX/DUT3/majority_reg[1]/CK
+       (Sync)RX/DUT3/majority_reg[0]/CK
+       (Sync)RX/DUT3/sampled_bit_reg/CK
+       (Sync)RX/DUT4/expected_parity_reg/CK
+       (Sync)RX/DUT4/par_err_reg/CK
+       (Sync)RX/DUT5/P_DATA_reg[5]/CK
+       (Sync)RX/DUT5/P_DATA_reg[1]/CK
+       (Sync)RX/DUT5/P_DATA_reg[4]/CK
+       (Sync)RX/DUT5/P_DATA_reg[0]/CK
+       (Sync)RX/DUT5/P_DATA_reg[3]/CK
+       (Sync)RX/DUT5/P_DATA_reg[2]/CK
+       (Sync)RX/DUT5/P_DATA_reg[6]/CK
+       (Sync)RX/DUT5/P_DATA_reg[7]/CK
+       (Sync)RX/DUT5/i_reg[2]/CK
+       (Sync)RX/DUT5/i_reg[0]/CK
+       (Sync)RX/DUT5/i_reg[1]/CK
+       (Sync)RX/DUT6/strt_glitch_reg/CK
+       (Sync)RX/DUT7/stp_err_reg/CK
+    *DEPTH 4: clock_divider_TX/U30(AN->Y)
+     *DEPTH 5: clock_divider_TX/U29(S0->Y)
+      *DEPTH 6: U4_mux2X1/U1(A->Y)
+       (Sync)FIFO/RD/r_binary_reg[3]/CK
+       (Sync)FIFO/RD/r_binary_reg[0]/CK
+       (Sync)FIFO/RD/r_binary_reg[2]/CK
+       (Sync)FIFO/RD/r_binary_reg[1]/CK
+       (Sync)FIFO/RD/rptr_reg[3]/CK
+       (Sync)FIFO/RD/rptr_reg[2]/CK
+       (Sync)FIFO/RD/rptr_reg[1]/CK
+       (Sync)FIFO/RD/rptr_reg[0]/CK
+       (Sync)FIFO/RD/rempty_reg/CK
+       (Sync)FIFO/sync_w2r/sync_reg_reg[3][1]/CK
+       (Sync)FIFO/sync_w2r/sync_reg_reg[2][1]/CK
+       (Sync)FIFO/sync_w2r/sync_reg_reg[1][1]/CK
+       (Sync)FIFO/sync_w2r/sync_reg_reg[0][1]/CK
+       (Sync)FIFO/sync_w2r/sync_reg_reg[3][0]/CK
+       (Sync)FIFO/sync_w2r/sync_reg_reg[2][0]/CK
+       (Sync)FIFO/sync_w2r/sync_reg_reg[1][0]/CK
+       (Sync)FIFO/sync_w2r/sync_reg_reg[0][0]/CK
+       (Sync)TX/DUT1/SER_DATA_reg/CK
+       (Sync)TX/DUT1/S_DATA_reg[0]/CK
+       (Sync)TX/DUT1/S_DATA_reg[6]/CK
+       (Sync)TX/DUT1/S_DATA_reg[5]/CK
+       (Sync)TX/DUT1/S_DATA_reg[4]/CK
+       (Sync)TX/DUT1/S_DATA_reg[3]/CK
+       (Sync)TX/DUT1/S_DATA_reg[2]/CK
+       (Sync)TX/DUT1/S_DATA_reg[1]/CK
+       (Sync)TX/DUT1/SER_DONE_reg/CK
+       (Sync)TX/DUT1/COUNT_reg[2]/CK
+       (Sync)TX/DUT1/COUNT_reg[1]/CK
+       (Sync)TX/DUT1/COUNT_reg[0]/CK
+       (Sync)TX/DUT2/current_state_reg[0]/CK
+       (Sync)TX/DUT2/current_state_reg[2]/CK
+       (Sync)TX/DUT2/current_state_reg[1]/CK
+       (Sync)TX/DUT3/par_bit_reg/CK
+       (Sync)pulse_gen/rcv_flop_reg/CK
+       (Sync)pulse_gen/pls_flop_reg/CK
+  *DEPTH 2: clock_divider_TX/div_clk_reg(CK->Q)
+   (Excl)clock_divider_TX/flag_reg/SI
+   (Excl)clock_divider_TX/U33/S0
+   *DEPTH 3: clock_divider_TX/U29(B->Y)
+    *DEPTH 4: U4_mux2X1/U1(A->Y)
+     (Sync)FIFO/RD/r_binary_reg[3]/CK
+     (Sync)FIFO/RD/r_binary_reg[0]/CK
+     (Sync)FIFO/RD/r_binary_reg[2]/CK
+     (Sync)FIFO/RD/r_binary_reg[1]/CK
+     (Sync)FIFO/RD/rptr_reg[3]/CK
+     (Sync)FIFO/RD/rptr_reg[2]/CK
+     (Sync)FIFO/RD/rptr_reg[1]/CK
+     (Sync)FIFO/RD/rptr_reg[0]/CK
+     (Sync)FIFO/RD/rempty_reg/CK
+     (Sync)FIFO/sync_w2r/sync_reg_reg[3][1]/CK
+     (Sync)FIFO/sync_w2r/sync_reg_reg[2][1]/CK
+     (Sync)FIFO/sync_w2r/sync_reg_reg[1][1]/CK
+     (Sync)FIFO/sync_w2r/sync_reg_reg[0][1]/CK
+     (Sync)FIFO/sync_w2r/sync_reg_reg[3][0]/CK
+     (Sync)FIFO/sync_w2r/sync_reg_reg[2][0]/CK
+     (Sync)FIFO/sync_w2r/sync_reg_reg[1][0]/CK
+     (Sync)FIFO/sync_w2r/sync_reg_reg[0][0]/CK
+     (Sync)TX/DUT1/SER_DATA_reg/CK
+     (Sync)TX/DUT1/S_DATA_reg[0]/CK
+     (Sync)TX/DUT1/S_DATA_reg[6]/CK
+     (Sync)TX/DUT1/S_DATA_reg[5]/CK
+     (Sync)TX/DUT1/S_DATA_reg[4]/CK
+     (Sync)TX/DUT1/S_DATA_reg[3]/CK
+     (Sync)TX/DUT1/S_DATA_reg[2]/CK
+     (Sync)TX/DUT1/S_DATA_reg[1]/CK
+     (Sync)TX/DUT1/SER_DONE_reg/CK
+     (Sync)TX/DUT1/COUNT_reg[2]/CK
+     (Sync)TX/DUT1/COUNT_reg[1]/CK
+     (Sync)TX/DUT1/COUNT_reg[0]/CK
+     (Sync)TX/DUT2/current_state_reg[0]/CK
+     (Sync)TX/DUT2/current_state_reg[2]/CK
+     (Sync)TX/DUT2/current_state_reg[1]/CK
+     (Sync)TX/DUT3/par_bit_reg/CK
+     (Sync)pulse_gen/rcv_flop_reg/CK
+     (Sync)pulse_gen/pls_flop_reg/CK
+  *DEPTH 2: clock_divider_TX/U29(A->Y)
+   *DEPTH 3: U4_mux2X1/U1(A->Y)
+    (Sync)FIFO/RD/r_binary_reg[3]/CK
+    (Sync)FIFO/RD/r_binary_reg[0]/CK
+    (Sync)FIFO/RD/r_binary_reg[2]/CK
+    (Sync)FIFO/RD/r_binary_reg[1]/CK
+    (Sync)FIFO/RD/rptr_reg[3]/CK
+    (Sync)FIFO/RD/rptr_reg[2]/CK
+    (Sync)FIFO/RD/rptr_reg[1]/CK
+    (Sync)FIFO/RD/rptr_reg[0]/CK
+    (Sync)FIFO/RD/rempty_reg/CK
+    (Sync)FIFO/sync_w2r/sync_reg_reg[3][1]/CK
+    (Sync)FIFO/sync_w2r/sync_reg_reg[2][1]/CK
+    (Sync)FIFO/sync_w2r/sync_reg_reg[1][1]/CK
+    (Sync)FIFO/sync_w2r/sync_reg_reg[0][1]/CK
+    (Sync)FIFO/sync_w2r/sync_reg_reg[3][0]/CK
+    (Sync)FIFO/sync_w2r/sync_reg_reg[2][0]/CK
+    (Sync)FIFO/sync_w2r/sync_reg_reg[1][0]/CK
+    (Sync)FIFO/sync_w2r/sync_reg_reg[0][0]/CK
+    (Sync)TX/DUT1/SER_DATA_reg/CK
+    (Sync)TX/DUT1/S_DATA_reg[0]/CK
+    (Sync)TX/DUT1/S_DATA_reg[6]/CK
+    (Sync)TX/DUT1/S_DATA_reg[5]/CK
+    (Sync)TX/DUT1/S_DATA_reg[4]/CK
+    (Sync)TX/DUT1/S_DATA_reg[3]/CK
+    (Sync)TX/DUT1/S_DATA_reg[2]/CK
+    (Sync)TX/DUT1/S_DATA_reg[1]/CK
+    (Sync)TX/DUT1/SER_DONE_reg/CK
+    (Sync)TX/DUT1/COUNT_reg[2]/CK
+    (Sync)TX/DUT1/COUNT_reg[1]/CK
+    (Sync)TX/DUT1/COUNT_reg[0]/CK
+    (Sync)TX/DUT2/current_state_reg[0]/CK
+    (Sync)TX/DUT2/current_state_reg[2]/CK
+    (Sync)TX/DUT2/current_state_reg[1]/CK
+    (Sync)TX/DUT3/par_bit_reg/CK
+    (Sync)pulse_gen/rcv_flop_reg/CK
+    (Sync)pulse_gen/pls_flop_reg/CK
+
+
+
+
+
+Tracing Clock REF_CLK
+Pin U0_mux2X1/U1/Y is a crossover pin in Clock scan_clk
+
+****** Clock Tree (REF_CLK) Structure
+Nr. Subtrees                   : 3
+Nr. Sinks                      : 274
+Nr.          Rising  Sync Pins : 274
+Nr. Inverter Rising  Sync Pins : 0
+Nr.          Falling Sync Pins : 0
+Nr. Inverter Falling Sync Pins : 0
+
+** Leaf Pins
+CELL (PORT)                            Nr.
+-----------------------------------------------
+SDFFRQX1M (CK)                          1
+SDFFSQX2M (CK)                          3
+SDFFRQX2M (CK)                          260
+SDFFRQX4M (CK)                          2
+SDFFRX1M (CK)                           8
+-----------------------------------------------
+
+
+
+
+** Gate Component Input Pins
+CELL (PORT)                            Nr.
+-----------------------------------------------
+TLATNCAX12M (CK)                        1
+MX2X6M (A)                              1
+-----------------------------------------------
+
+
+
+** Subtree Detail
+*DEPTH 0 Input_Pin: (EMPTY) Output_Pin: (REF_CLK) Cell: (EMPTY) Net: (REF_CLK) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Total Sync Pins        : 0
+          Nr. of     Rising  Sync Pins  : 0
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 1
+*DEPTH 1 Input_Pin: (U0_mux2X1/U1/A) Output_Pin: (U0_mux2X1/U1/Y) Cell: (MX2X6M) Net: (CLK_M) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Total Sync Pins        : 257
+          Nr. of     Rising  Sync Pins  : 257
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 1
+*DEPTH 2 Input_Pin: (CLK_GATE/U0_TLATNCAX12M/CK) Output_Pin: (CLK_GATE/U0_TLATNCAX12M/ECK) Cell: (TLATNCAX12M) Net: (ALU_CLK) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Total Sync Pins        : 17
+          Nr. of     Rising  Sync Pins  : 17
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 0
+***********************************************************
+
+****** Pre CTS Detail Structure for clock REF_CLK
+*DEPTH 0: REF_CLK
+ *DEPTH 1: U0_mux2X1/U1(A->Y)
+  (Sync)Data_sync/enable_flop_reg/CK
+  (Sync)Data_sync/sync_reg_reg[1]/CK
+  (Sync)Data_sync/sync_bus_reg[7]/CK
+  (Sync)Data_sync/sync_bus_reg[5]/CK
+  (Sync)Data_sync/sync_bus_reg[4]/CK
+  (Sync)Data_sync/sync_bus_reg[6]/CK
+  (Sync)Data_sync/sync_bus_reg[3]/CK
+  (Sync)Data_sync/sync_bus_reg[1]/CK
+  (Sync)Data_sync/sync_bus_reg[2]/CK
+  (Sync)Data_sync/sync_bus_reg[0]/CK
+  (Sync)Data_sync/enable_pulse_reg/CK
+  (Sync)Data_sync/sync_reg_reg[0]/CK
+  (Sync)REGISTER/Reg_File_reg[13][7]/CK
+  (Sync)REGISTER/Reg_File_reg[13][6]/CK
+  (Sync)REGISTER/Reg_File_reg[13][5]/CK
+  (Sync)REGISTER/Reg_File_reg[13][4]/CK
+  (Sync)REGISTER/Reg_File_reg[13][3]/CK
+  (Sync)REGISTER/Reg_File_reg[13][2]/CK
+  (Sync)REGISTER/Reg_File_reg[13][1]/CK
+  (Sync)REGISTER/Reg_File_reg[13][0]/CK
+  (Sync)REGISTER/Reg_File_reg[9][7]/CK
+  (Sync)REGISTER/Reg_File_reg[9][6]/CK
+  (Sync)REGISTER/Reg_File_reg[9][5]/CK
+  (Sync)REGISTER/Reg_File_reg[9][4]/CK
+  (Sync)REGISTER/Reg_File_reg[9][3]/CK
+  (Sync)REGISTER/Reg_File_reg[9][2]/CK
+  (Sync)REGISTER/Reg_File_reg[9][1]/CK
+  (Sync)REGISTER/Reg_File_reg[9][0]/CK
+  (Sync)REGISTER/Reg_File_reg[5][7]/CK
+  (Sync)REGISTER/Reg_File_reg[5][6]/CK
+  (Sync)REGISTER/Reg_File_reg[5][5]/CK
+  (Sync)REGISTER/Reg_File_reg[5][4]/CK
+  (Sync)REGISTER/Reg_File_reg[5][3]/CK
+  (Sync)REGISTER/Reg_File_reg[5][2]/CK
+  (Sync)REGISTER/Reg_File_reg[5][1]/CK
+  (Sync)REGISTER/Reg_File_reg[5][0]/CK
+  (Sync)REGISTER/Reg_File_reg[15][7]/CK
+  (Sync)REGISTER/Reg_File_reg[15][6]/CK
+  (Sync)REGISTER/Reg_File_reg[15][5]/CK
+  (Sync)REGISTER/Reg_File_reg[15][4]/CK
+  (Sync)REGISTER/Reg_File_reg[15][3]/CK
+  (Sync)REGISTER/Reg_File_reg[15][2]/CK
+  (Sync)REGISTER/Reg_File_reg[15][1]/CK
+  (Sync)REGISTER/Reg_File_reg[15][0]/CK
+  (Sync)REGISTER/Reg_File_reg[11][7]/CK
+  (Sync)REGISTER/Reg_File_reg[11][6]/CK
+  (Sync)REGISTER/Reg_File_reg[11][5]/CK
+  (Sync)REGISTER/Reg_File_reg[11][4]/CK
+  (Sync)REGISTER/Reg_File_reg[11][3]/CK
+  (Sync)REGISTER/Reg_File_reg[11][2]/CK
+  (Sync)REGISTER/Reg_File_reg[11][1]/CK
+  (Sync)REGISTER/Reg_File_reg[11][0]/CK
+  (Sync)REGISTER/Reg_File_reg[7][7]/CK
+  (Sync)REGISTER/Reg_File_reg[7][6]/CK
+  (Sync)REGISTER/Reg_File_reg[7][5]/CK
+  (Sync)REGISTER/Reg_File_reg[7][4]/CK
+  (Sync)REGISTER/Reg_File_reg[7][3]/CK
+  (Sync)REGISTER/Reg_File_reg[7][2]/CK
+  (Sync)REGISTER/Reg_File_reg[7][1]/CK
+  (Sync)REGISTER/Reg_File_reg[7][0]/CK
+  (Sync)REGISTER/Reg_File_reg[14][7]/CK
+  (Sync)REGISTER/Reg_File_reg[14][6]/CK
+  (Sync)REGISTER/Reg_File_reg[14][5]/CK
+  (Sync)REGISTER/Reg_File_reg[14][4]/CK
+  (Sync)REGISTER/Reg_File_reg[14][3]/CK
+  (Sync)REGISTER/Reg_File_reg[14][2]/CK
+  (Sync)REGISTER/Reg_File_reg[14][1]/CK
+  (Sync)REGISTER/Reg_File_reg[14][0]/CK
+  (Sync)REGISTER/Reg_File_reg[10][7]/CK
+  (Sync)REGISTER/Reg_File_reg[10][6]/CK
+  (Sync)REGISTER/Reg_File_reg[10][5]/CK
+  (Sync)REGISTER/Reg_File_reg[10][4]/CK
+  (Sync)REGISTER/Reg_File_reg[10][3]/CK
+  (Sync)REGISTER/Reg_File_reg[10][2]/CK
+  (Sync)REGISTER/Reg_File_reg[10][1]/CK
+  (Sync)REGISTER/Reg_File_reg[10][0]/CK
+  (Sync)REGISTER/Reg_File_reg[6][7]/CK
+  (Sync)REGISTER/Reg_File_reg[6][6]/CK
+  (Sync)REGISTER/Reg_File_reg[6][5]/CK
+  (Sync)REGISTER/Reg_File_reg[6][4]/CK
+  (Sync)REGISTER/Reg_File_reg[6][3]/CK
+  (Sync)REGISTER/Reg_File_reg[6][2]/CK
+  (Sync)REGISTER/Reg_File_reg[6][1]/CK
+  (Sync)REGISTER/Reg_File_reg[6][0]/CK
+  (Sync)REGISTER/Reg_File_reg[12][7]/CK
+  (Sync)REGISTER/Reg_File_reg[12][6]/CK
+  (Sync)REGISTER/Reg_File_reg[12][5]/CK
+  (Sync)REGISTER/Reg_File_reg[12][4]/CK
+  (Sync)REGISTER/Reg_File_reg[12][3]/CK
+  (Sync)REGISTER/Reg_File_reg[12][2]/CK
+  (Sync)REGISTER/Reg_File_reg[12][1]/CK
+  (Sync)REGISTER/Reg_File_reg[12][0]/CK
+  (Sync)REGISTER/Reg_File_reg[8][7]/CK
+  (Sync)REGISTER/Reg_File_reg[8][6]/CK
+  (Sync)REGISTER/Reg_File_reg[8][5]/CK
+  (Sync)REGISTER/Reg_File_reg[8][4]/CK
+  (Sync)REGISTER/Reg_File_reg[8][3]/CK
+  (Sync)REGISTER/Reg_File_reg[8][2]/CK
+  (Sync)REGISTER/Reg_File_reg[8][1]/CK
+  (Sync)REGISTER/Reg_File_reg[8][0]/CK
+  (Sync)REGISTER/Reg_File_reg[4][7]/CK
+  (Sync)REGISTER/Reg_File_reg[4][6]/CK
+  (Sync)REGISTER/Reg_File_reg[4][5]/CK
+  (Sync)REGISTER/Reg_File_reg[4][4]/CK
+  (Sync)REGISTER/Reg_File_reg[4][3]/CK
+  (Sync)REGISTER/Reg_File_reg[4][2]/CK
+  (Sync)REGISTER/Reg_File_reg[4][1]/CK
+  (Sync)REGISTER/Reg_File_reg[4][0]/CK
+  (Sync)REGISTER/RdData_reg[7]/CK
+  (Sync)REGISTER/RdData_reg[6]/CK
+  (Sync)REGISTER/RdData_reg[5]/CK
+  (Sync)REGISTER/RdData_reg[4]/CK
+  (Sync)REGISTER/RdData_reg[3]/CK
+  (Sync)REGISTER/RdData_reg[2]/CK
+  (Sync)REGISTER/RdData_reg[1]/CK
+  (Sync)REGISTER/RdData_reg[0]/CK
+  (Sync)REGISTER/Reg_File_reg[3][0]/CK
+  (Sync)REGISTER/Reg_File_reg[2][1]/CK
+  (Sync)REGISTER/Reg_File_reg[0][7]/CK
+  (Sync)REGISTER/Reg_File_reg[0][6]/CK
+  (Sync)REGISTER/Reg_File_reg[0][5]/CK
+  (Sync)REGISTER/Reg_File_reg[0][4]/CK
+  (Sync)REGISTER/Reg_File_reg[0][3]/CK
+  (Sync)REGISTER/Reg_File_reg[0][2]/CK
+  (Sync)REGISTER/Reg_File_reg[0][1]/CK
+  (Sync)REGISTER/Reg_File_reg[0][0]/CK
+  (Sync)REGISTER/Reg_File_reg[2][0]/CK
+  (Sync)REGISTER/Reg_File_reg[1][5]/CK
+  (Sync)REGISTER/Reg_File_reg[1][4]/CK
+  (Sync)REGISTER/Reg_File_reg[1][7]/CK
+  (Sync)REGISTER/Reg_File_reg[1][1]/CK
+  (Sync)REGISTER/Reg_File_reg[1][3]/CK
+  (Sync)REGISTER/Reg_File_reg[1][2]/CK
+  (Sync)REGISTER/Reg_File_reg[1][6]/CK
+  (Sync)REGISTER/Reg_File_reg[1][0]/CK
+  (Sync)REGISTER/RdData_Valid_reg/CK
+  (Sync)REGISTER/Reg_File_reg[3][5]/CK
+  (Sync)REGISTER/Reg_File_reg[3][3]/CK
+  (Sync)REGISTER/Reg_File_reg[3][4]/CK
+  (Sync)REGISTER/Reg_File_reg[3][7]/CK
+  (Sync)REGISTER/Reg_File_reg[3][6]/CK
+  (Sync)REGISTER/Reg_File_reg[3][2]/CK
+  (Sync)REGISTER/Reg_File_reg[3][1]/CK
+  (Sync)REGISTER/Reg_File_reg[2][4]/CK
+  (Sync)REGISTER/Reg_File_reg[2][3]/CK
+  (Sync)REGISTER/Reg_File_reg[2][6]/CK
+  (Sync)REGISTER/Reg_File_reg[2][5]/CK
+  (Sync)REGISTER/Reg_File_reg[2][7]/CK
+  (Sync)REGISTER/Reg_File_reg[2][2]/CK
+  (Sync)U_system_control/TX_P_DATA_store_reg[6]/CK
+  (Sync)U_system_control/TX_P_DATA_store_reg[5]/CK
+  (Sync)U_system_control/TX_P_DATA_store_reg[4]/CK
+  (Sync)U_system_control/TX_P_DATA_store_reg[3]/CK
+  (Sync)U_system_control/TX_P_DATA_store_reg[2]/CK
+  (Sync)U_system_control/TX_P_DATA_store_reg[1]/CK
+  (Sync)U_system_control/TX_P_DATA_store_reg[0]/CK
+  (Sync)U_system_control/store_ALU_OUT_reg[15]/CK
+  (Sync)U_system_control/store_ALU_OUT_reg[14]/CK
+  (Sync)U_system_control/store_ALU_OUT_reg[13]/CK
+  (Sync)U_system_control/store_ALU_OUT_reg[12]/CK
+  (Sync)U_system_control/store_ALU_OUT_reg[11]/CK
+  (Sync)U_system_control/store_ALU_OUT_reg[10]/CK
+  (Sync)U_system_control/store_ALU_OUT_reg[9]/CK
+  (Sync)U_system_control/store_ALU_OUT_reg[8]/CK
+  (Sync)U_system_control/RX_D_VLD_delayed_reg/CK
+  (Sync)U_system_control/storeadd_reg[3]/CK
+  (Sync)U_system_control/storeadd_reg[2]/CK
+  (Sync)U_system_control/storeadd_reg[1]/CK
+  (Sync)U_system_control/storeadd_reg[0]/CK
+  (Sync)U_system_control/current_state_reg[2]/CK
+  (Sync)U_system_control/current_state_reg[1]/CK
+  (Sync)U_system_control/current_state_reg[3]/CK
+  (Sync)U_system_control/current_state_reg[0]/CK
+  (Sync)U_system_control/TX_P_DATA_store_reg[7]/CK
+  (Sync)RSTSYNC1/sync_reg_reg[0]/CK
+  (Sync)RSTSYNC1/sync_reg_reg[1]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[5][7]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[5][6]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[5][5]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[5][4]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[5][3]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[5][2]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[5][1]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[5][0]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[1][7]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[1][6]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[1][5]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[1][4]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[1][3]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[1][2]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[1][1]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[1][0]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[7][7]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[7][6]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[7][5]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[7][4]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[7][3]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[7][2]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[7][1]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[7][0]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[3][7]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[3][6]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[3][5]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[3][4]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[3][3]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[3][2]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[3][1]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[3][0]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[6][7]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[6][6]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[6][5]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[6][4]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[6][3]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[6][2]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[6][1]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[6][0]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[2][7]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[2][6]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[2][5]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[2][4]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[2][3]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[2][2]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[2][1]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[2][0]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[4][7]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[4][6]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[4][5]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[4][4]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[4][3]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[4][2]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[4][1]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[4][0]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[0][7]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[0][6]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[0][5]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[0][4]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[0][3]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[0][2]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[0][1]/CK
+  (Sync)FIFO/MEM/Reg_File_reg[0][0]/CK
+  (Sync)FIFO/WR/w_binary_reg[3]/CK
+  (Sync)FIFO/WR/w_binary_reg[2]/CK
+  (Sync)FIFO/WR/wfull_reg/CK
+  (Sync)FIFO/WR/w_binary_reg[0]/CK
+  (Sync)FIFO/WR/w_binary_reg[1]/CK
+  (Sync)FIFO/WR/wptr_reg[3]/CK
+  (Sync)FIFO/WR/wptr_reg[2]/CK
+  (Sync)FIFO/WR/wptr_reg[1]/CK
+  (Sync)FIFO/WR/wptr_reg[0]/CK
+  (Sync)FIFO/sync_r2w/sync_reg_reg[3][1]/CK
+  (Sync)FIFO/sync_r2w/sync_reg_reg[2][1]/CK
+  (Sync)FIFO/sync_r2w/sync_reg_reg[1][1]/CK
+  (Sync)FIFO/sync_r2w/sync_reg_reg[0][1]/CK
+  (Sync)FIFO/sync_r2w/sync_reg_reg[3][0]/CK
+  (Sync)FIFO/sync_r2w/sync_reg_reg[2][0]/CK
+  (Sync)FIFO/sync_r2w/sync_reg_reg[1][0]/CK
+  (Sync)FIFO/sync_r2w/sync_reg_reg[0][0]/CK
+  *DEPTH 2: CLK_GATE/U0_TLATNCAX12M(CK->ECK)
+   (Sync)ALU/ALU_OUT_reg[7]/CK
+   (Sync)ALU/ALU_OUT_reg[6]/CK
+   (Sync)ALU/ALU_OUT_reg[5]/CK
+   (Sync)ALU/ALU_OUT_reg[4]/CK
+   (Sync)ALU/ALU_OUT_reg[3]/CK
+   (Sync)ALU/ALU_OUT_reg[2]/CK
+   (Sync)ALU/ALU_OUT_reg[1]/CK
+   (Sync)ALU/ALU_OUT_reg[0]/CK
+   (Sync)ALU/OUT_VALID_reg/CK
+   (Sync)ALU/ALU_OUT_reg[15]/CK
+   (Sync)ALU/ALU_OUT_reg[14]/CK
+   (Sync)ALU/ALU_OUT_reg[13]/CK
+   (Sync)ALU/ALU_OUT_reg[12]/CK
+   (Sync)ALU/ALU_OUT_reg[11]/CK
+   (Sync)ALU/ALU_OUT_reg[10]/CK
+   (Sync)ALU/ALU_OUT_reg[9]/CK
+   (Sync)ALU/ALU_OUT_reg[8]/CK
