@@ -1,0 +1,3 @@
+[submodule "8-bit-Pipelined-Processor-Verilog"]
+	path = 8-bit-Pipelined-Processor-Verilog
+	url = https://github.com/farhan036/8-bit-Pipelined-Processor-Verilog.git
