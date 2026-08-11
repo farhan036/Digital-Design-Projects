@@ -5,7 +5,8 @@
 This project implements a 32-iteration, fixed-point CORDIC (COordinate Rotation
 DIgital Computer) core in Verilog that computes sine and cosine of an input
 angle. It is verified against a bit-accurate MATLAB golden reference model
-using a SystemVerilog testbench.
+using a SystemVerilog testbench, and implemented for a Zynq-7020-based board
+in Vivado.
 
 | File | Description |
 |---|---|
@@ -15,6 +16,7 @@ using a SystemVerilog testbench.
 | `input_angles.hex` | 32 test angles (Q3.29, radians) |
 | `expected_cos.hex` | Expected cosine outputs (Q3.29, 33-bit signed) |
 | `expected_sin.hex` | Expected sine outputs (Q3.29, 33-bit signed) |
+| `pynq_z2_cordic.xdc` | Board constraints (clock, reset, LEDs) — **see Target Device note below** |
 
 ## Fixed-Point Formats
 
@@ -37,7 +39,7 @@ using a SystemVerilog testbench.
 3. **Quadrant correction** — If the angle was reduced in step 1, negate the
    final `x` (cosine) and `y` (sine).
 
-## Verification
+## Functional Verification (Simulation)
 
 The testbench (`CORDIC_tb.sv`) loads all three `.hex` files, applies each
 angle to the DUT, waits `N + 3` clock cycles for the pipeline to settle, and
@@ -59,12 +61,43 @@ and RTL fixed-point arithmetic.
 21 PASSED, 0 FAILED
 ```
 
-All 21 vectors passed. Spot-checked by hand (angle = 0, angle = −π/2 exactly,
-angle = π) against expected trig values — deviations were on the order of a
-few counts (≤ ~10), far inside the 500-count tolerance, confirming the pass
-reflects genuine numerical accuracy rather than an overly loose tolerance.
+Spot-checked by hand (angle = 0, angle = −π/2 exactly, angle = π) against
+expected trig values — deviations were on the order of a few counts (≤ ~10),
+far inside the 500-count tolerance, confirming the pass reflects genuine
+numerical accuracy rather than an overly loose tolerance.
 
-## Running the Testbench
+## Implementation Results (Vivado)
+
+### Target Device
+
+| Part | Package Pins | User I/O | LUT | FF | BRAM (36Kb) | DSP48 |
+|---|---|---|---|---|---|---|
+| `xc7z020clg484-3` | 484 | 200 | 53,200 | 106,400 | 140 | 220 |
+
+> ⚠️ **Note:** the resource counts above match the Zynq-7020 device, but the
+> package/speed grade is `clg484-3` — this is a **different package** than
+> the `clg400-1` used on the PYNQ-Z2 (ZedBoard and Zybo Z7-20 use `clg484`
+> instead). If your actual target is a `clg484` board, the pin locations in
+> `pynq_z2_cordic.xdc` (H16 for clock, D19 for BTN0, etc.) will **not** be
+> correct — those are PYNQ-Z2-specific `clg400` pinouts. Confirm which
+> physical board this is before using that XDC file for implementation; the
+> pin-out will need to be regenerated from that board's schematic/master XDC.
+
+### Timing Summary
+
+| Check | Worst Slack | Total Negative Slack | Failing Endpoints | Total Endpoints |
+|---|---|---|---|---|
+| Setup (WNS) | 0.930 ns | 0.000 ns | 0 | 6,726 |
+| Hold (WHS) | 0.087 ns | 0.000 ns | 0 | 6,726 |
+| Pulse Width (WPWS) | 4.500 ns | 0.000 ns | 0 | 3,460 |
+
+**All user-specified timing constraints are met** — 0 failing endpoints on
+setup, hold, and pulse width checks. The design closes timing cleanly at the
+constrained clock frequency with comfortable positive margin on all three
+checks (worst case is setup at +0.930 ns, i.e. the critical path finishes
+with just under 1 ns to spare before the next clock edge).
+
+## Running the Testbench (Simulation)
 
 1. Run `matlab_model.m` in MATLAB/Octave to (re)generate the three `.hex`
    vector files.
@@ -76,9 +109,26 @@ reflects genuine numerical accuracy rather than an overly loose tolerance.
    or with a tool like Icarus Verilog / Verilator that supports SV testbenches.
 3. Check console output for the `PASSED` / `FAILED` summary.
 
+## Running Implementation (Vivado)
+
+1. Create an RTL project targeting the confirmed board/part (see Target
+   Device note above — verify the part before proceeding).
+2. Add `CORDIC.v` as a design source.
+3. Add the appropriate XDC constraints file for your actual board (clock
+   pin, reset, and any I/O you've wired up in a top-level wrapper).
+4. Run Synthesis → Implementation → Generate Bitstream.
+5. Check `Reports → Timing Summary` — confirm 0 failing endpoints on setup,
+   hold, and pulse width, matching the results above.
+
 ## Known Limitations / Notes
 
 - Legacy 16-bit saturation logic exists in `CORDIC.v` but is commented out
   and unused — safe to ignore or remove.
-- The 500-count tolerance is a design choice for numerical robustness, not a
-  bug workaround; actual observed errors are roughly 8–10 counts.
+- The 500-count simulation tolerance is a design choice for numerical
+  robustness, not a bug workaround; actual observed errors are roughly
+  8–10 counts.
+- CORDIC's 32/33-bit data ports (`z`, `x_start`, `y_start`, `cosine`,
+  `sine`) exceed the available switches/LEDs on typical dev boards — a
+  top-level wrapper (AXI-Lite/GPIO shim to the Zynq PS, or a built-in
+  test-vector ROM) is needed for true on-hardware verification beyond
+  timing closure.
