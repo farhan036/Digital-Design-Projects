@@ -10,3 +10,5 @@
 [submodule "STREAMED-INTERMEDIATE-RESULT-PROCESSING-UNIT"]
 	path = 03-STREAMED-Intermediate-Result-Processing-Unit
 	url = https://github.com/farhan036/STREAMED-INTERMEDIATE-RESULT-PROCESSING-UNIT.git
+[submodule "01-AI-MobileViT-Hardware-Accelerator"]
+	url = https://github.com/farhan036/MobileViT-AI-Hardware-Accelerator.git
