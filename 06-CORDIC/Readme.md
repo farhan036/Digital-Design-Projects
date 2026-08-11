@@ -28,4 +28,8 @@ This repository implements an iterative Fixed-Point CORDIC (Coordinate Rotation 
 Run the MATLAB script to create the required test angle vectors and golden output reference files:
 ```matlab
 run('matlab_model.m')
+```
+### 2. Run TestBench
+Run the CORDIC_tb to Check the required test angle vectors 
+```matlab
 run('CORDIC_tb.sv')
