@@ -1,14 +1,9 @@
 [submodule "8-bit-Pipelined-Processor-Verilog"]
 	path = 04-8-Bit-Pipelined-Processor
 	url = https://github.com/farhan036/8-bit-Pipelined-Processor-Verilog.git
-[submodule "MobileViT-AI-Hardware-Accelerator"]
-	path = 01-AI-MobileViT-Hardware-Accelerator
-	url = https://github.com/AshrafByte/MobileViT-AI-Hardware-Accelerator.git
 [submodule "MIPS-pipelined"]
 	path = 02-MIPS-Pipelined
 	url = https://github.com/farhan036/MIPS-pipelined.git
 [submodule "STREAMED-INTERMEDIATE-RESULT-PROCESSING-UNIT"]
 	path = 03-STREAMED-Intermediate-Result-Processing-Unit
 	url = https://github.com/farhan036/STREAMED-INTERMEDIATE-RESULT-PROCESSING-UNIT.git
-[submodule "01-AI-MobileViT-Hardware-Accelerator"]
-	url = https://github.com/farhan036/MobileViT-AI-Hardware-Accelerator.git
