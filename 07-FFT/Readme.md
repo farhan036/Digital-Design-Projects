@@ -54,3 +54,8 @@ Each `butterfly.v` module implements the fundamental Radix-2 execution steps:
 Run the verification script to synthesize sample signals and build golden hex vectors:
 ```matlab
 run('Model16_point.m')
+### 2. Run TestBench
+```
+Run the FFT_tb_16 to Check  
+```matlab
+run('FFT_tb_16.v')
