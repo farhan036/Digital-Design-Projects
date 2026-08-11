@@ -7,3 +7,6 @@
 [submodule "MIPS-pipelined"]
 	path = MIPS-pipelined
 	url = https://github.com/farhan036/MIPS-pipelined.git
+[submodule "STREAMED-INTERMEDIATE-RESULT-PROCESSING-UNIT"]
+	path = STREAMED-INTERMEDIATE-RESULT-PROCESSING-UNIT
+	url = https://github.com/farhan036/STREAMED-INTERMEDIATE-RESULT-PROCESSING-UNIT.git
