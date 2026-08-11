@@ -74,14 +74,6 @@ numerical accuracy rather than an overly loose tolerance.
 |---|---|---|---|---|---|---|
 | `xc7z020clg484-3` | 484 | 200 | 53,200 | 106,400 | 140 | 220 |
 
-> ⚠️ **Note:** the resource counts above match the Zynq-7020 device, but the
-> package/speed grade is `clg484-3` — this is a **different package** than
-> the `clg400-1` used on the PYNQ-Z2 (ZedBoard and Zybo Z7-20 use `clg484`
-> instead). If your actual target is a `clg484` board, the pin locations in
-> `pynq_z2_cordic.xdc` (H16 for clock, D19 for BTN0, etc.) will **not** be
-> correct — those are PYNQ-Z2-specific `clg400` pinouts. Confirm which
-> physical board this is before using that XDC file for implementation; the
-> pin-out will need to be regenerated from that board's schematic/master XDC.
 
 ### Timing Summary
 
